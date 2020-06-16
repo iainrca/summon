@@ -33,7 +33,7 @@ console.log("End of js file");
 $(document).ready(function() {
          console.log("inside ready");
     //$('div.availabilityRta').on('load', function() {
-    console.log($('body'));
+    console.log($('div.summary'));
     $('div.shortSummary').on('load', function() {                
              console.log("div loaded");
        if($('div.availabilities').length > 0) {
