@@ -16,7 +16,7 @@
 
 
 
-
+/*
 $('div.availabilityRta a').each(function () {
    console.log($(this).text() );  
    var LocArr = $(this).text().split(',');
@@ -28,11 +28,11 @@ $('div.availabilityRta a').each(function () {
    }
 });
 console.log("End of js file");
-
-//$(document).ready(function() {
-//    $('div.availabilityRta').on('load', function() {
-//       if($('div.availabilities').length > 0) {
-//     console.log("RTA loaded");
-//}
-//    });
-//});
+*/
+$(document).ready(function() {
+    $('div.availabilityRta').on('load', function() {
+       if($('div.availabilities').length > 0) {
+     console.log("RTA loaded");
+}
+    });
+});
