@@ -32,7 +32,8 @@ $('div.availabilityRta a').each(function () {
 console.log("End of js file");
 $(document).ready(function() {
          console.log("inside ready");
-    $('div.availabilityRta').on('load', function() {
+    //$('div.availabilityRta').on('load', function() {
+    $(document).on( 'load', 'div.availabilityRta', function() {
              console.log("avRta loaded");
        if($('div.availabilities').length > 0) {
      console.log("RTA loaded");
