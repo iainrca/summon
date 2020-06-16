@@ -27,8 +27,9 @@ $('div.availabilityRta a').each(function () {
  $( "<em>Some text</em></br>" ).insertBefore( $(this) );
    }
 });
-console.log("End of js file");
+
 */
+console.log("End of js file");
 $(document).ready(function() {
          console.log("inside ready");
     $('div.availabilityRta').on('load', function() {
