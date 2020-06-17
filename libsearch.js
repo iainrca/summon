@@ -45,9 +45,11 @@ $(document).ready(function() {
 });
 */
 
+$(document).ready(function() {
 let rootScope = angular.element('html').scope().$root
   rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 500))
-  
+});
+
  function AppendToHoldings() {
    console.log($('div.availabilityRta a'));
  }
