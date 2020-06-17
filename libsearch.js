@@ -29,6 +29,8 @@ $('div.availabilityRta a').each(function () {
 });
 
 */
+
+/*
 console.log("End of js file");
 $(document).ready(function() {
          console.log("inside ready");
@@ -41,3 +43,11 @@ $(document).ready(function() {
 }
     });
 });
+*/
+
+let rootScope = angular.element('html').scope().$root
+  rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 500))
+  
+ function AppendToHoldings() {
+   console.log($('div.availabilityRta a'));
+ }
