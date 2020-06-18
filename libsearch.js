@@ -29,6 +29,23 @@ let rootScope = angular.element('html').scope().$root
           if (Loc == 'CRL') {
               console.log("Special Collections Appointment needed");
               $( "<em>Contact <a href='https://www.rca.ac.uk/more/special-collections/access-location-and-appointments/' target='_blank'>Archives and Special Collections</a> to book an appointment</em></br>" ).insertBefore( $(this) );
-          }                           
+          } 
+         elseif (Loc == 'SPECCOLL') {
+              $( "<em>Contact <a href='https://www.rca.ac.uk/more/special-collections/access-location-and-appointments/' target='_blank'>Archives and Special Collections</a> to book an appointment</em></br>" ).insertBefore( $(this) );
+
+          }
+         elseif (Loc == 'ARC') {
+              $( "<em>Contact <a href='https://www.rca.ac.uk/more/special-collections/access-location-and-appointments/' target='_blank'>Archives and Special Collections</a> to book an appointment</em></br>" ).insertBefore( $(this) );
+
+          }
+         elseif (Loc == 'AB') {
+              $( "<em>Contact <a href='https://www.rca.ac.uk/more/special-collections/access-location-and-appointments/' target='_blank'>Archives and Special Collections</a> to book an appointment</em></br>" ).insertBefore( $(this) );
+
+          }
+          elseif (Loc == 'FLTV') {
+              $( "<em>Contact Library Desk to request item</em></br>" ).insertBefore( $(this) );
+
+          }
+          
    });
  }
