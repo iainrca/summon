@@ -55,9 +55,15 @@ let rootScope = angular.element('html').scope().$root
    // console.log($('div.summary')); works!!!
    // console.log($('div.availabilityRta')); works
           //stuff we need is in an array
-   $('div.availabilityRta div.availabilityInfo').each(function () {
-            console.log("here");
+   $('div.availabilityRta div.availabilityInfo').each(function () {            
       console.log($(this).text() ); 
+      var LocArr = $(this).text().split(',');
+      console.log(LocArr);
+      var Loc = LocArr[0];
+      if (Loc == 'CRL') {
+         console.log("CRL found");
+         $( "<em>Some text</em></br>" ).insertBefore( $(this) );
+      }
    });
           
  }
