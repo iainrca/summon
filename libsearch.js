@@ -28,7 +28,7 @@ let rootScope = angular.element('html').scope().$root
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
           if (Loc == 'CRL') {
               console.log("CRL found");
-              $( "<em>Some text</em></br>" ).insertBefore( $(this) );
+              $( "<em>Contact <a href='https://www.rca.ac.uk/more/special-collections/access-location-and-appointments/'>Archives and Special Collections</a> to book an appointment</em></br>" ).insertBefore( $(this) );
           }                           
    });
  }
