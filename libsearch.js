@@ -55,7 +55,8 @@ let rootScope = angular.element('html').scope().$root
    // console.log($('div.summary')); works!!!
    // console.log($('div.availabilityRta')); works
           //stuff we need is in an array
-   $('div.availabilityRta a').each(function () {
+   $('div.availabilityRta div.availabilityInfo').each(function () {
+            console.log("here");
       console.log($(this).text() ); 
    });
           
