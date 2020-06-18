@@ -56,7 +56,8 @@ let rootScope = angular.element('html').scope().$root
    // console.log($('div.summary')); works!!!
     console.log($('div.availabilityRta'));     
           //stuff we need is in an array
-   $('div.availabilityRta div.availabilityInfo').each(function () {            
+   //$('div.availabilityRta div.availabilityInfo').each(function () {            
+          $('div.availabilityRta').each(function () {            
             console.log("selector fires");
             //var calllink = $(this).find('a').text();            
             //console.log(calllink); 
