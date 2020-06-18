@@ -26,9 +26,9 @@ let rootScope = angular.element('html').scope().$root
           //console.log($(this).text() ); 
           var LocArr = $(this).text().split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
-          if (Loc == 'CRL') {
-              console.log("CRL found");
-              $( "<em>Contact <a href='https://www.rca.ac.uk/more/special-collections/access-location-and-appointments/'>Archives and Special Collections</a> to book an appointment</em></br>" ).insertBefore( $(this) );
+          if (Loc == 'CRL' or Loc == 'ARC' or Loc == 'SPECCOL'or Loc == 'AB') {
+              console.log("Special Collections Appointment needed");
+              $( "<em>Contact <a href='https://www.rca.ac.uk/more/special-collections/access-location-and-appointments/' target='_blank'>Archives and Special Collections</a> to book an appointment</em></br>" ).insertBefore( $(this) );
           }                           
    });
  }
