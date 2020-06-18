@@ -57,9 +57,9 @@ let rootScope = angular.element('html').scope().$root
     console.log($('div.availabilityRta'));     
           //stuff we need is in an array
    $('div.availabilityRta div.availabilityInfo').each(function () {            
-            //var calllink = $(this).find('a').text();
+            var calllink = $(this).find('a').text();
             console.log("selector fires");
-            //console.log(calllink); 
+            console.log(calllink); 
             //var LocArr = $(this).text().split(',');
             //console.log(LocArr);
             //var Loc = LocArr[0];
