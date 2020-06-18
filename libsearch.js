@@ -54,7 +54,8 @@ let rootScope = angular.element('html').scope().$root
           console.log("Fn fires");
    //console.log($('div.availabilityRta a')); nothing
    // console.log($('div.summary')); works!!!
-   // console.log($('div.availabilityRta')); works
+    console.log($('div.availabilityRta')); works
+     console.log($('div.availabilityRta div.availabilityInfo')); ??
           //stuff we need is in an array
    $('div.availabilityRta div.availabilityInfo').each(function () {            
             console.log("selector fires");
