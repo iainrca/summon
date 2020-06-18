@@ -51,25 +51,9 @@ let rootScope = angular.element('html').scope().$root
 });
 
  function AppendToHoldings() {
-          console.log("Fn fires");
-   //console.log($('div.availabilityRta a')); nothing
-   // console.log($('div.summary')); works!!!
-    console.log($('div.availabilityRta'));     
-          //stuff we need is in an array
-   //$('div.availabilityRta div.availabilityInfo').each(function () {            
-          //$('div.availabilityRta div.rtaInfo').each(function () {            
-          $('div.availabilityRta div.rtaInfo').find('.availabilityLink').each(function () {            
-            console.log("selector fires");
-                   console.log($(this));
-            var calllink = $(this);            
-            console.log(calllink); 
-            //var LocArr = $(this).text().split(',');
-            //console.log(LocArr);
-            //var Loc = LocArr[0];
-            //if (Loc == 'CRL') {
-            //    console.log("CRL found");
-             //    $( "<em>Some text</em></br>" ).insertBefore( $(this) );
-             //}            
-   });
           
+          $('div.availabilityRta div.availabilityInfo').each(function () {
+            console.log("here");
+      console.log($(this).text() ); 
+   });
  }
