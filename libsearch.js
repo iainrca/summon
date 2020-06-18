@@ -60,7 +60,7 @@ let rootScope = angular.element('html').scope().$root
           $('div.availabilityRta div.rtaInfo').each(function () {            
             console.log("selector fires");
                    console.log($(this));
-            var calllink = $(this).find('a.availabilityLink');            
+            var calllink = $(this).children("a");            
             console.log(calllink); 
             //var LocArr = $(this).text().split(',');
             //console.log(LocArr);
