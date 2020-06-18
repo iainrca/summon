@@ -51,5 +51,6 @@ let rootScope = angular.element('html').scope().$root
 });
 
  function AppendToHoldings() {
-   console.log($('div.availabilityRta a'));
+   //console.log($('div.availabilityRta a'));
+   console.log($('div.summary'));
  }
