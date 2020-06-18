@@ -52,8 +52,7 @@ let rootScope = angular.element('html').scope().$root
 
  function AppendToHoldings() {
           
-          $('div.availabilityRta div.availabilityInfo').each(function () {
-            console.log("here");
+          $('div.availabilityRta a').each(function () {
       console.log($(this).text() ); 
    });
  }
