@@ -57,7 +57,7 @@ let rootScope = angular.element('html').scope().$root
           console.log($(this).text() ); 
           var LocArr = $(this).text().split(',');
           console.log(LocArr);
-          var Loc = LocArr[0];
+          var Loc = LocArr[0].replace(/[\s\n]+/g,'');
           if (Loc == 'CRL') {
               console.log("CRL found");
               $( "<em>Some text</em></br>" ).insertBefore( $(this) );
