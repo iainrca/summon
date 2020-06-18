@@ -54,12 +54,12 @@ let rootScope = angular.element('html').scope().$root
           console.log("Fn fires");
    //console.log($('div.availabilityRta a')); nothing
    // console.log($('div.summary')); works!!!
-    console.log($('div.availabilityRta')); 
-    console.log($('div.availabilityRta div.availabilityInfo')); 
+    console.log($('div.availabilityRta'));     
           //stuff we need is in an array
-   $('div.availabilityRta div.availabilityInfo a').each(function () {            
+   $('div.availabilityRta div.availabilityInfo').each(function () {            
+            calllink = $(this).find('a'));
             console.log("selector fires");
-            console.log($(this).text() ); 
+            console.log(calllink.text() ); 
             var LocArr = $(this).text().split(',');
             console.log(LocArr);
             var Loc = LocArr[0];
