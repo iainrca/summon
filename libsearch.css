@@ -20,5 +20,5 @@ body {
 }
 /*link of injected */
 .availabilityContent.availability.documentSummaryAvailability a {
-	color:#0066cc;
+	color:#0066cc!important;
 }
