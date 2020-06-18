@@ -26,7 +26,7 @@ let rootScope = angular.element('html').scope().$root
           //console.log($(this).text() ); 
           var LocArr = $(this).text().split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
-          if (Loc == 'CRL' || Loc == 'ARC' || Loc == 'SPECCOL'|| Loc == 'AB') {
+          if (Loc == 'CRL') {
               console.log("Special Collections Appointment needed");
               $( "<em>Contact <a href='https://www.rca.ac.uk/more/special-collections/access-location-and-appointments/' target='_blank'>Archives and Special Collections</a> to book an appointment</em></br>" ).insertBefore( $(this) );
           }                           
