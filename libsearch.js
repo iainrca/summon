@@ -46,6 +46,9 @@ let rootScope = angular.element('html').scope().$root
               $( "<em>Contact Library Desk to request item</em></br>" ).insertBefore( $(this) );
 
           }
+          else if (Loc == 'IS') {
+                   Loc = 'On Shelf';
+          }
           
    });
  }
