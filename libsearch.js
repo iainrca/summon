@@ -43,9 +43,24 @@ let rootScope = angular.element('html').scope().$root
               $( "<em>Contact <a href='https://www.rca.ac.uk/more/special-collections/access-location-and-appointments/' target='_blank'>Archives and Special Collections</a> to book an appointment</em></br>" ).insertBefore( $(this) );
 
           }
-          else if (Loc == 'FLTV') {
-              $( "<em>Contact Library Desk to request item</em></br>" ).insertBefore( $(this) );
+         else if (Loc == 'OFFSITE') {
+              $( "<em>Contact <a href='https://www.rca.ac.uk/more/special-collections/access-location-and-appointments/' target='_blank'>Archives and Special Collections</a> to book an appointment</em></br>" ).insertBefore( $(this) );
 
+          }                   
+          else if (Loc == 'FLTV') {
+              $( "<em>Ask at Library Desk</em></br>" ).insertBefore( $(this) );
           }
+          else if (Loc == 'PER_NONC') {
+              $( "<em>Ask at Library Desk</em></br>" ).insertBefore( $(this) );
+          }
+          else if (Loc == 'PER_RES') {
+              $( "<em>Ask at Library Desk</em></br>" ).insertBefore( $(this) );
+          }
+           else if (Loc == 'THESES') {
+              $( "<em>Ask at Library Desk</em></br>" ).insertBefore( $(this) );
+          }
+           else if (Loc == 'STACK') {
+              $( "<em>Ask at Library Desk</em></br>" ).insertBefore( $(this) );
+          }                  
    });
  }
