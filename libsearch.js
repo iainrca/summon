@@ -48,19 +48,19 @@ let rootScope = angular.element('html').scope().$root
 
           }                   
           else if (Loc == 'FLTV') {
-              $( "<em>Ask at Library Desk</em></br>" ).insertBefore( $(this) );
+              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
           }
           else if (Loc == 'PER_NONC') {
-              $( "<em>Ask at Library Desk</em></br>" ).insertBefore( $(this) );
+              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
           }
           else if (Loc == 'PER_RES') {
-              $( "<em>Ask at Library Desk</em></br>" ).insertBefore( $(this) );
+              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
           }
            else if (Loc == 'THESES') {
-              $( "<em>Ask at Library Desk</em></br>" ).insertBefore( $(this) );
+              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
           }
            else if (Loc == 'STACK') {
-              $( "<em>Ask at Library Desk</em></br>" ).insertBefore( $(this) );
+              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
           }                  
    });
  }
