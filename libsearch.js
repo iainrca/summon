@@ -64,3 +64,16 @@ let rootScope = angular.element('html').scope().$root
           }                  
    });
  }
+
+/* How to add additional custom links in Summon 2.0 */
+angular.module('summonApp')
+.run(['configService', function (config) {
+    config.data.links.custom1 = {
+        href: "http://qh7vn5wm4q.search.serialssolutions.com/",
+        label: "EJournal Finder"
+     }
+     config.data.links.custom2 = {
+         href: "https://researchonline.rca.ac.uk/",
+         label: "RCA ResearchOnline"
+     }
+ }]);
