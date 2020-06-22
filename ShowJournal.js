@@ -187,7 +187,9 @@ function callAtoZ()
 						"font-weight":"bold",
 						"padding":"5px 11px",
 						"width":"100%",
-						"text-decoration":"none"
+						"text-decoration":"none",
+					        "display": "none"
+				
 						
 					});
 			}
