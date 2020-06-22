@@ -22,3 +22,8 @@ body {
 .availabilityContent.availability.documentSummaryAvailability a {
 	color:#0066cc!important;
 }
+
+/*hide Language Option from Menu */
+.languageSwitcher {
+	display:none;
+}
