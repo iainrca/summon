@@ -14,11 +14,13 @@
         // Append link element to HTML head 
         document.head.appendChild(link);
 
+/* code to run the following function only when the rta results are back*/
 
 $(document).ready(function() {
 let rootScope = angular.element('html').scope().$root
   rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 2000))
 });
+/*function to append text to records where the RTA Location Code requires users to do something*/
 
  function AppendToHoldings() {
           
@@ -65,7 +67,8 @@ let rootScope = angular.element('html').scope().$root
    });
  }
 
-/* How to add additional custom links in Summon 2.0 */
+/* Adding additional Cusom Links to Summon. EJournal A-Z and RCA ResearchOnline */
+
 angular.module('summonApp')
 .run(['configService', function (config) {
     config.data.links.custom1 = {
