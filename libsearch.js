@@ -28,7 +28,7 @@ let rootScope = angular.element('html').scope().$root
           //console.log($(this).text() ); 
           var LocArr = $(this).text().split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
-                   console.log(Loc);
+                   //console.log(Loc);
           if (Loc == 'CRL') {
               console.log("Special Collections Appointment needed");
               $( "<em>Contact <a href='https://www.rca.ac.uk/more/special-collections/access-location-and-appointments/' target='_blank'>Archives and Special Collections</a> to book an appointment</em></br>" ).insertBefore( $(this) );
@@ -72,10 +72,14 @@ let rootScope = angular.element('html').scope().$root
 angular.module('summonApp')
 .run(['configService', function (config) {
     config.data.links.custom1 = {
+        href: "https://rca.libguides.com/az.php",
+        label: "Online Resources"
+     }
+    config.data.links.custom2 = {
         href: "http://qh7vn5wm4q.search.serialssolutions.com/",
         label: "EJournal Finder"
      }
-     config.data.links.custom2 = {
+     config.data.links.custom3 = {
          href: "https://researchonline.rca.ac.uk/",
          label: "RCA ResearchOnline"
      }
