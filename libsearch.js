@@ -84,6 +84,10 @@ angular.module('summonApp')
          href: "https://researchonline.rca.ac.uk/",
          label: "RCA ResearchOnline"
      }
+     config.data.links.custom4 = {
+         href: "https://moodle.rca.ac.uk/",
+         label: "Moodle"
+     }
  }]);
 
 $('.customLinks li:contains(Help)').hide();
