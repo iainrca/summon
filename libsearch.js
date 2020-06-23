@@ -100,10 +100,10 @@ let rootScope = angular.element('html').scope().$root
  function AmendToPublisher() {
          $('a.results-dbRef').each(function () {
           console.log($(this).text() ); 
-          var LocArr = $(this).text().split(',');          
-          var Loc = LocArr[0].replace(/[\s\n]+/g,'');
-          console.log(Loc);
-          if (Loc == 'SingleJournals') {
+          var DbArr = $(this).text().split(',');          
+          var DbType = DbArr[0].replace(/[\s\n]+/g,'');
+          console.log(DbType);
+          if (DbType == 'SingleJournals') {
               console.log("Change to Publishers Site");
               $(this).text("Publishers Site");
           } 
