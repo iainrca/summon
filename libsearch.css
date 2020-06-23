@@ -31,3 +31,7 @@ body {
 .languageSwitcher {
 	display:none;
 }
+/*someone appears to be messing with our css a bit, so am changing the facets background to white */
+body .moreFacetsContainer {
+	background-color:#fff!important;
+}
