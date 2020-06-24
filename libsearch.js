@@ -32,7 +32,7 @@ let rootScope = angular.element('html').scope().$root
                    //console.log(Loc);
           if (Loc == 'CRL') {
               console.log("Special Collections Appointment needed");
-              $( "<em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></br>" ).insertBefore( $(this) );
+              $( "<p id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></p></br>" ).insertBefore( $(this) );
           } 
          else if (Loc == 'SPECCOLL') {
               $( "<em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></br>" ).insertBefore( $(this) );
