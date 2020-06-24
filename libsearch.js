@@ -64,7 +64,10 @@ let rootScope = angular.element('html').scope().$root
           }
            else if (Loc == 'STACK') {
               $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
-          }                  
+          }     
+            else if (Loc == 'PER_CURR') {
+              $( "<em>In Journals Room</em></br>" ).insertAfter( $(this) );
+          }                                    
    });
  }
 
