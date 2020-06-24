@@ -30,6 +30,7 @@ let rootScope = angular.element('html').scope().$root
           var LocArr = $(this).text().split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
                    //console.log(Loc);
+         if (!$("div.availabilityInfo").parent().find("#specialcol")) {
           if (Loc == 'CRL') {
               //console.log("Special Collections Appointment needed");
               $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></div></br>" ).insertAfter( $(this) );
@@ -68,6 +69,7 @@ let rootScope = angular.element('html').scope().$root
             else if (Loc == 'PER_CURR') {
               $( "<em>In Journals Room</em></br>" ).insertAfter( $(this) );
           }
+         }
    });
  }
 
