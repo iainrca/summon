@@ -36,23 +36,23 @@ let rootScope = angular.element('html').scope().$root
               $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></div></br>" ).insertAfter( $(this) );
           } 
          else if (Loc == 'SPECCOLL') {
-              $( "<em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
 
           }
          else if (Loc == 'ARC') {
-              $( "<em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
 
           }
          else if (Loc == 'AB') {
-              $( "<em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
 
           }
          else if (Loc == 'OFFSITE') {
-              $( "<em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
 
           }                   
           else if (Loc == 'FLTV') {
-              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
           }
           else if (Loc == 'PER_NONC') {
               $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
