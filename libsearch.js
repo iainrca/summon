@@ -32,21 +32,21 @@ let rootScope = angular.element('html').scope().$root
                    //console.log(Loc);
           if (Loc == 'CRL') {
               //console.log("Special Collections Appointment needed");
-              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></div></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div></br>" ).insertAfter( $(this) );
           } 
          else if (Loc == 'SPECCOLL') {
-              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
 
           }
          else if (Loc == 'ARC') {
-              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
 
           }
          else if (Loc == 'AB') {
-              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
           }
          else if (Loc == 'OFFSITE') {
-              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
 
           }                   
           else if (Loc == 'FLTV') {
