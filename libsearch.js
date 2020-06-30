@@ -76,7 +76,7 @@ angular.module('summonApp')
 .run(['configService', function (config) {
     config.data.links.custom1 = {
         href: "https://rca.libguides.com/az.php",
-        label: "Online Resources"
+        label: "A-Z Online Resources"
      }
     config.data.links.custom2 = {
         href: "http://qh7vn5wm4q.search.serialssolutions.com/",
