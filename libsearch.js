@@ -65,7 +65,7 @@ let rootScope = angular.element('html').scope().$root
               $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
           }     
             else if (Loc == 'PER_CURR') {
-              $( "<em>In Journals Room</em></br>" ).insertAfter( $(this) );
+              $( "<em>Latest Issue in Journals Room</em></br>" ).insertAfter( $(this) );
             }
    });
  }
@@ -95,5 +95,5 @@ angular.module('summonApp')
 
 
 
-//$('.customLinks li:contains(Help)').hide();
-//$('.customLinks li:contains(Feedback)').hide();
+//$('.customLinks li:contains('Help')').hide();
+//$('.customLinks li:contains('Feedback')').hide();
