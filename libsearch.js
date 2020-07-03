@@ -90,6 +90,14 @@ angular.module('summonApp')
          href: "https://moodle.rca.ac.uk/",
          label: "Moodle"
      }
+     config.data.links.custom5 = {
+         href: "https://intranet.rca.ac.uk/book-suggestions/",
+         label: "Book Suggestions"
+     }
+      config.data.links.custom6 = {
+         href: "https://intranet.rca.ac.uk/inter-library-loans/",
+         label: "Inter Library Loan Request"
+     }
  }]);
 
 
