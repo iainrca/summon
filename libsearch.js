@@ -96,7 +96,7 @@ angular.module('summonApp')
      }
       config.data.links.custom6 = {
          href: "https://intranet.rca.ac.uk/inter-library-loans/",
-         label: "Inter Library Loan Request"
+         label: "Inter Library Loan"
      }
  }]);
 
