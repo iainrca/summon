@@ -70,7 +70,7 @@ let rootScope = angular.element('html').scope().$root
    });
  }
 
-/* Adding additional Cusom Links to Summon. EJournal A-Z and RCA ResearchOnline */
+/* Adding additional Custom Links to Summon.*/
 
 angular.module('summonApp')
 .run(['configService', function (config) {
