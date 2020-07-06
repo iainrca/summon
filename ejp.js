@@ -1,7 +1,7 @@
 /* An attempt to change Single Journals to Publisher Site to make the experience for end user better */
-$(document).ready(function() {
-	 $('a.results-dbRef').each(function () {
- console.log("Its fucking running");
+angular.element(document).ready(function () {
+        ('a.results-dbRef').each(function () {
+ 
           var DbArr = $(this).text().split(',');          
           var DbType = DbArr[0].replace(/[\s\n]+/g,'');
 
@@ -10,4 +10,4 @@ $(document).ready(function() {
               $(this).text("Publishers Site");
           } 
 		  });
-		 });
+});
