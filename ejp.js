@@ -1,7 +1,7 @@
 /* An attempt to change Single Journals to Publisher Site to make the experience for end user better */
 $(document).ready(function() {
 	 $('a.results-dbRef').each(function () {
- 
+ console.log("Its fucking running");
           var DbArr = $(this).text().split(',');          
           var DbType = DbArr[0].replace(/[\s\n]+/g,'');
 
