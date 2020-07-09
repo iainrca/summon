@@ -99,9 +99,3 @@ angular.module('summonApp')
          label: "Inter Library Loan"
      }
  }]);
-
-
-
-
-//$('.customLinks li:contains('Help')').hide();
-//$('.customLinks li:contains('Feedback')').hide();
