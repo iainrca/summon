@@ -23,7 +23,7 @@ function callAtoZ()
 	var queryString = myScript.replace(/^[^\?]+\??/,'');
 	var params = parseQuery( queryString );
 	var libhash=params['libhash'];
-	var onlyJournal=false;
+	var onlyJournal=true;
 	var onlyBook=false;
 	if( "journal" in params ) {
 		if(params['journal'])
