@@ -98,4 +98,9 @@ angular.module('summonApp')
          href: "https://intranet.rca.ac.uk/inter-library-loans/",
          label: "Inter Library Loan"
      }
+       config.data.links.custom7 = {
+         href: "http://library.rca.ac.uk/client/summon/search/patronlogin/http:$002f$002flibrary.rca.ac.uk$002fclient$002fsummon$002fsearch$002faccount$003f",
+         label: "My Account"
+     }        
+         
  }]);
