@@ -99,7 +99,7 @@ angular.module('summonApp')
          label: "Inter Library Loan"
      }
        config.data.links.custom7 = {
-         href: "http://library.rca.ac.uk/client/summon/search/patronlogin/http:$002f$002flibrary.rca.ac.uk$002fclient$002fsummon$002fsearch$002faccount$003f",
+         href: "http://library.rca.ac.uk/client/en_GB/summon/search/patronlogin/http:$002f$002flibrary.rca.ac.uk$002fclient$002fen_GB$002fsummon$002fsearch$002faccount$002f1$003f",
          label: "My Account"
      }        
          
