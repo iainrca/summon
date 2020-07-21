@@ -1,6 +1,6 @@
 /* An attempt to change Single Journals to Publisher Site to make the experience for end user better */
-$(document).ready(function() {
-	
+/*$(document).ready(function() {*/
+$(window).on("load", function(){	
 	console.log("work, you bastard");
 	 $('a.results-dbRef').each(function () {
  
