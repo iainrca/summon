@@ -35,3 +35,7 @@ body {
 body .moreFacetsContainer {
 	background-color:#fff!important;
 }
+/*see if we can remove the custom links from appearing when on ip address range or vpn*/
+.list-inline {
+	display:none;
+}
