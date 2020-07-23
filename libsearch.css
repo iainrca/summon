@@ -35,7 +35,8 @@ body {
 body .moreFacetsContainer {
 	background-color:#fff!important;
 }
-/*see if we can remove the custom links from appearing when on ip address range or vpn*/
+/*see if we can remove the custom links from appearing when on ip address range or vpn on mobile*/
+@media (max-width: 800px) {
 .list-inline {
 	display:none;
 }
