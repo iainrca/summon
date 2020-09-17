@@ -91,11 +91,11 @@ angular.module('summonApp')
          label: "Moodle"
      }
      config.data.links.custom5 = {
-         href: "https://intranet.rca.ac.uk/book-suggestions/",
+         href: "https://moodle.rca.ac.uk/course/view.php?id=9&section=11",
          label: "Book Suggestions"
      }
       config.data.links.custom6 = {
-         href: "https://intranet.rca.ac.uk/inter-library-loans/",
+         href: "https://moodle.rca.ac.uk/course/view.php?id=9&section=12",
          label: "Inter Library Loan"
      }
        config.data.links.custom7 = {
