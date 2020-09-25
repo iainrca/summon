@@ -87,7 +87,7 @@ angular.module('summonApp')
          label: "RCA ResearchOnline"
      }
      config.data.links.custom4 = {
-         href: "https://moodle.rca.ac.uk/",
+         href: "https://moodle.rca.ac.uk/course/view.php?id=9",
          label: "Moodle"
      }
      config.data.links.custom5 = {
