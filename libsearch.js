@@ -104,15 +104,3 @@ angular.module('summonApp')
      }        
          
  }]);
-
-function changeHelp() {
-var str = document.getElementById("page").innerHTML; 
-var rca = str.replace(/Summon™|Summon/gi , "RCA Library Search");
-document.getElementById("page").innerHTML = rca;
-}
-
-$(document).ready(function(){
-    $("button").click(function(){
-        $("a").trigger("click");
-    });
-});
