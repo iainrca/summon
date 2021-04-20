@@ -76,27 +76,27 @@ angular.module('summonApp')
 .run(['configService', function (config) {
     config.data.links.custom1 = {
         href: "https://rca.libguides.com/az.php",
-        label: "A-Z Online Resources"
+        label: "Online Resources A-Z"
      }
     config.data.links.custom2 = {
         href: "http://qh7vn5wm4q.search.serialssolutions.com/",
-        label: "EJournal Finder"
+        label: "E-Journals A-Z"
      }
      config.data.links.custom3 = {
          href: "https://researchonline.rca.ac.uk/",
-         label: "RCA ResearchOnline"
+         label: "RCA Research Online"
      }
      config.data.links.custom4 = {
          href: "https://moodle.rca.ac.uk/course/view.php?id=9",
          label: "Moodle"
      }
      config.data.links.custom5 = {
-         href: "https://moodle.rca.ac.uk/course/view.php?id=9&section=6",
-         label: "Book Suggestions"
+         href: "https://rca.libguides.com/c.php?g=688796&p=4929377&preview=95943e5b520b75b578fafbc6ff01919f",
+         label: "Suggest a Book"
      }
       config.data.links.custom6 = {
-         href: "https://moodle.rca.ac.uk/course/view.php?id=9&section=13",
-         label: "Inter Library Loan"
+         href: "https://rca.libguides.com/c.php?g=688796&p=4929379&preview=95943e5b520b75b578fafbc6ff01919f",
+         label: "Inter-library Loans"
      }
        config.data.links.custom7 = {
          href: "http://library.rca.ac.uk/client/en_GB/summon/search/patronlogin/http:$002f$002flibrary.rca.ac.uk$002fclient$002fen_GB$002fsummon$002fsearch$002faccount$002f1$003f",
