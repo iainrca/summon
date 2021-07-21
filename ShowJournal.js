@@ -55,6 +55,10 @@ function callAtoZ()
 					$('div#rightPane div.customSections li').first().css("display","block");
 					//$('div#rightPane div.customSections li h3[ng-bind="::section.title"]').first().css("display","none");
 				}
+				else
+				{
+					$('div#rightPane div.customSections li').first().css("display","none");
+				}
 
 				for( var i=0; i<number; i++)
 				{
