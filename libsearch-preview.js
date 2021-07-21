@@ -9,7 +9,7 @@
       
         link.type = 'text/css'; 
       
-        link.href = 'https://iainrca.github.io/summon/libsearch-preview.css';  
+        link.href = 'https://iainrca.github.io/summon/summon-preview.css';  
   
         // Append link element to HTML head 
         document.head.appendChild(link);
