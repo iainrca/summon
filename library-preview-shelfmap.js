@@ -68,8 +68,8 @@ let rootScope = angular.element('html').scope().$root
             else if (Loc == 'PER_CURR') {
               $( "<div id='specialcol'><em>Latest Issue in Journals Room</em></br>" ).insertAfter( $(this) );
             }
-	     else if(Loc == 'ONSHELF') {
-	      $( "div id='shelfmap'><a href='https://app.shelfmap.co.uk?icode=44RCA&id=" + bibid +" target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='Map drop pin' />Take me to the Book</a></span></br>").insertAfter( $(this) );
+	    else if(Loc == 'ONSHELF') {
+	      $( "div id='shelfmap'>Take me to the Book</br>").insertAfter( $(this) );
 			}
 
 	    
