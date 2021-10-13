@@ -28,7 +28,7 @@ let rootScope = angular.element('html').scope().$root
 
 	  console.log("bibid");	  
 	  console.log($('div.documentSummary'));
- 	  console.log($('div.documentSummary').id);
+ 	  console.log($('div.documentSummary').attr('id'));
 	 
           $('div.availabilityInfo').each(function () {
           //console.log($(this).text() ); 
