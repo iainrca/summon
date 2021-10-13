@@ -21,7 +21,7 @@ let rootScope = angular.element('html').scope().$root
   rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 2000))
 });
 
-
+var bibid=$('div.documentSummary');
 
 /*function to append text to records where the RTA Location Code requires users to do something*/
 
@@ -70,9 +70,9 @@ let rootScope = angular.element('html').scope().$root
               $( "<div id='specialcol'><em>Latest Issue in Journals Room</em></br></div>" ).insertAfter( $(this) );
             }
 	    else if(Loc == 'ONSHELF') {
-		    var bibid=$('div.documentSummary').id.replace(/FETCH-rca_catalog_u/g,'');
-		    console.log(bibid);
-	      	$( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk?icode=44RCA&id= + bibid ' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='Map drop pin' />Take me to the Book</a></div></br>").insertAfter( $(this) );
+		    var bibid2= $bibid.id.replace(/FETCH-rca_catalog_u/g,'');
+		    console.log(bibid2);
+	      	$( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk?icode=44RCA&id= + bibid2 ' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='Map drop pin' />Take me to the Book</a></div></br>").insertAfter( $(this) );
 			}
 
 	    
