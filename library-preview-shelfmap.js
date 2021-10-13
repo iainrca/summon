@@ -36,6 +36,7 @@ let rootScope = angular.element('html').scope().$root
 	 
           $('div.availabilityInfo').each(function () {
           //console.log($(this).text() ); 
+          console.log("Triggers");
           var LocArr = $(this).text().split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
                    //console.log(Loc);
