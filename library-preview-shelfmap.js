@@ -25,10 +25,11 @@ let rootScope = angular.element('html').scope().$root
 /*function to append text to records where the RTA Location Code requires users to do something*/
 
  function AppendToHoldings() {
-          
-          $('div.availabilityInfo').each(function () {
+
 	  console.log("bibid");	  
 	  console.log($('div.documentSummary'));
+	 
+          $('div.availabilityInfo').each(function () {
           //console.log($(this).text() ); 
           var LocArr = $(this).text().split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
