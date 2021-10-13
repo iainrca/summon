@@ -69,7 +69,7 @@ let rootScope = angular.element('html').scope().$root
               $( "<div id='specialcol'><em>Latest Issue in Journals Room</em></br>" ).insertAfter( $(this) );
             }
 	    else if(Loc == 'ONSHELF') {
-	      $( "div id='shelfmap'>Take me to the Book</br>").insertAfter( $(this) );
+	      $( "<div id='shelfmap'>Take me to the Book</br>").insertAfter( $(this) );
 			}
 
 	    
