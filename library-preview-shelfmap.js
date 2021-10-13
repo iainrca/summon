@@ -21,7 +21,8 @@ let rootScope = angular.element('html').scope().$root
   rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 2000))
 });
 
-var bibid=$('div.documentSummary').id.replace(/FETCH-rca_catalog_u/g,'');
+let bibid=$('div.documentSummary').id.replace(/FETCH-rca_catalog_u/g,'');
+console.log(bibid);
 
 /*function to append text to records where the RTA Location Code requires users to do something*/
 
