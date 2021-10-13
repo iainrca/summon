@@ -25,6 +25,7 @@ $(document).ready(function() {
 let rootScope = angular.element('html').scope().$root
   rootScope.$on('apiSuccess', (scope) => setTimeout(ShelfMap, 1000))
 });
+
 /*function to append text to records where the RTA Location Code requires users to do something*/
 
  function AppendToHoldings() {
