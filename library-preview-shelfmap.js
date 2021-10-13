@@ -27,6 +27,8 @@ let rootScope = angular.element('html').scope().$root
  function AppendToHoldings() {
           
           $('div.availabilityInfo').each(function () {
+	  console.log("bibid");	  
+	  console.log($('div.documentSummary'));
           //console.log($(this).text() ); 
           var LocArr = $(this).text().split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
