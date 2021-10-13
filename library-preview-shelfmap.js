@@ -30,7 +30,8 @@ let rootScope = angular.element('html').scope().$root
 	  console.log($('div.documentSummary'));
  	  //console.log($('div.documentSummary').attr('id'));
 	  $('div.documentSummary').each(function () {
-	    console.log($(this).attr('id').replace(/FETCH-rca_catalog_u/g,'') );
+            var bibid = $(this).attr('id').replace(/FETCH-rca_catalog_u/g,'');		  
+	    console.log(bibid);
           });		  
 	 
           $('div.availabilityInfo').each(function () {
