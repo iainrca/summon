@@ -71,7 +71,7 @@ let rootScope = angular.element('html').scope().$root
             }
 	    else if(Loc == 'ONSHELF') {
 		    var bibid=$('div.documentSummary').id.replace(/FETCH-rca_catalog_u/g,'');
-	      			$( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk?icode=44RCA&id=" + bibid" ' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='Map drop pin' />Take me to the Book</a></div></br>").insertAfter( $(this) );
+	      	$( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk?icode=44RCA&id= + bibid ' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='Map drop pin' />Take me to the Book</a></div></br>").insertAfter( $(this) );
 			}
 
 	    
