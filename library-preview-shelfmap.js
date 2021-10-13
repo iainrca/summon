@@ -32,6 +32,7 @@ let rootScope = angular.element('html').scope().$root
           var LocArr = $(this).text().split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
                    //console.log(Loc);
+	  var bibid=$('div.documentSummary').id.replace(/FETCH-rca_catalog_u/g,'');
           if (Loc == 'CRL') {
               //console.log("Special Collections Appointment needed");
               $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div></br>" ).insertAfter( $(this) );
@@ -69,10 +70,8 @@ let rootScope = angular.element('html').scope().$root
             else if (Loc == 'PER_CURR') {
               $( "<div id='specialcol'><em>Latest Issue in Journals Room</em></br>" ).insertAfter( $(this) );
             }
-		var invalidSMLocs=["SPECCOLL","CRL","AB","ARC"];
-		else if(invalidSMLocs.indexOf(Loc) == -1) {
-			var bibid=$('div.documentSummary').id.replace(/FETCH-rca_catalog_u/g,'');
-			$( "div id='shelfmap'><a href='https://app.shelfmap.co.uk?icode=44RCA&id=" + bibid +" target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='Map drop pin' />Take me to the Book</a></span></br>").insertAfter( $(this) );
+	     else if(Loc == 'ONSHELF') {
+	      $( "div id='shelfmap'><a href='https://app.shelfmap.co.uk?icode=44RCA&id=" + bibid +" target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='Map drop pin' />Take me to the Book</a></span></br>").insertAfter( $(this) );
 			}
 
 	    
