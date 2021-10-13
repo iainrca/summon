@@ -74,6 +74,8 @@ let rootScope = angular.element('html').scope().$root
    });
  }
  
+//function to call shelfmap link
+
  function ShelfMap() {
  
 		$('div.availabilityInfo').each(function () {
