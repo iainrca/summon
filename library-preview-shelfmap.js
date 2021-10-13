@@ -36,10 +36,18 @@ let rootScope = angular.element('html').scope().$root
 	 
           $('div.availabilityInfo').each(function () {
           //console.log($(this).text() ); 
-          console.log("Triggers");
+	  	  	  
+          var invalidSMLocs=["SPECCOLL","CRL","AB","ARC"];
+          // if you don't want a link for these which will go to the enq desk, add them to invalidSMLocs array above. Otherwise ensure all below are set up in SM db
+          //["THESES","STACK","FLTV","OFFSITE","PER_NONC","PER_RES","CAT","IP","JR","ONORD"]
+		  
           var LocArr = $(this).text().split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
                    //console.log(Loc);
+	  if(invalidSMLocs.indexOf(Loc) == -1) {
+	     // get bib id and append shelfmap url/link
+	      $( "<span><a href='https://app.shelfmap.co.uk?icode=44RCA&id=" + "bibid" + " target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='Map drop pin' /></a></span></br>").insertAfter( $(this) );
+   	  }		  
           if (Loc == 'CRL') {
               //console.log("Special Collections Appointment needed");
               $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div></br>" ).insertAfter( $(this) );
