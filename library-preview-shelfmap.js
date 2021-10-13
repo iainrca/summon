@@ -70,7 +70,7 @@ let rootScope = angular.element('html').scope().$root
               $( "<div id='specialcol'><em>Latest Issue in Journals Room</em></br>" ).insertAfter( $(this) );
             }
 		var invalidSMLocs=["SPECCOLL","CRL","AB","ARC"];
-		if(invalidSMLocs.indexOf(Loc) == -1) {
+		else if(invalidSMLocs.indexOf(Loc) == -1) {
 			var bibid=$('div.documentSummary').id.replace(/FETCH-rca_catalog_u/g,'');
 			$( "div id='shelfmap'><a href='https://app.shelfmap.co.uk?icode=44RCA&id=" + bibid +" target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='Map drop pin' />Take me to the Book</a></span></br>").insertAfter( $(this) );
 			}
