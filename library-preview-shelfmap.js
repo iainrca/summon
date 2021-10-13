@@ -33,7 +33,6 @@ let rootScope = angular.element('html').scope().$root
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
                    //console.log(Loc);
 	  var invalidSMLocs=["SPECCOLL","CRL","AB","ARC","THESES","STACK","FLTV","OFFSITE","PER_NONC","PER_RES","CAT","IP","JR","ONORD"];
-	  var bibid=$('div.documentSummary').id.replace(/FETCH-rca_catalog_u/g,'');
           if (Loc == 'CRL') {
               //console.log("Special Collections Appointment needed");
               $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div></br>" ).insertAfter( $(this) );
