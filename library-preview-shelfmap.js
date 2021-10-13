@@ -51,25 +51,25 @@ let rootScope = angular.element('html').scope().$root
 
           }                   
           else if (Loc == 'FLTV') {
-              $( "<div id='specialcol'><em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );
           }
           else if (Loc == 'PER_NONC') {
-              $( "<div id='specialcol'><em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );
           }
           else if (Loc == 'PER_RES') {
-              $( "<div id='specialcol'><em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );
           }
            else if (Loc == 'THESES') {
-              $( "<div id='specialcol'><em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );
           }
            else if (Loc == 'STACK') {
-              $( "<div id='specialcol'><em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );
           }     
             else if (Loc == 'PER_CURR') {
-              $( "<div id='specialcol'><em>Latest Issue in Journals Room</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Latest Issue in Journals Room</em></br></div>" ).insertAfter( $(this) );
             }
 	    else if(Loc == 'ONSHELF') {
-	      $( "<span><a href='https://app.shelfmap.co.uk?icode=44RCA&id=" + bibid + " target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='Map drop pin' />Take me t'Book</a></span></br>" ).insertAfter( $(this) );
+	      $( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk?icode=44RCA&id=" + bibid + " target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'>Take me t'Book</a></br></div>" ).insertAfter( $(this) );
 			}
 
 	    
