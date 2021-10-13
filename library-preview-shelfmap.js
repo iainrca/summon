@@ -56,19 +56,19 @@ let rootScope = angular.element('html').scope().$root
               $( "<div id='specialcol'><em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
           }
           else if (Loc == 'PER_NONC') {
-              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
           }
           else if (Loc == 'PER_RES') {
-              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
           }
            else if (Loc == 'THESES') {
-              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
           }
            else if (Loc == 'STACK') {
-              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
           }     
             else if (Loc == 'PER_CURR') {
-              $( "<em>Latest Issue in Journals Room</em></br>" ).insertAfter( $(this) );
+              $( "<div id='specialcol'><em>Latest Issue in Journals Room</em></br>" ).insertAfter( $(this) );
             }
 	    else if(invalidSMLocs.indexOf(Loc) == -1) {
 		// get bib id and append shelfmap url/link
