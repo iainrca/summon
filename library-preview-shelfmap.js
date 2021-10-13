@@ -73,7 +73,7 @@ let rootScope = angular.element('html').scope().$root
 	    else if(invalidSMLocs.indexOf(Loc) == -1) {
 		// get bib id and append shelfmap url/link
 		 // div.documentSummary has an id like #FETCH-rca_catalog_u332762 which if we can trap, we can parse out 332762 and use
-		//var bibid=$('div.documentSummary').id.replace(/FETCH-rca_catalog_u/g,'');
+		var bibid=$('div.documentSummary').id.replace(/FETCH-rca_catalog_u/g,'');
 		$( "<div id='shelfmap'><em><a href='https://app.shelfmap.co.uk?icode=44RCA&id=" + bibid +" target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='Map drop pin' />Show item on ShelfMap</a></span></br>").insertAfter( $(this) );
 	    }
    });
