@@ -18,7 +18,7 @@
 
 $(document).ready(function() {
 let rootScope = angular.element('html').scope().$root
-  rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 2500))
+  rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 3000))
 });
 
 
