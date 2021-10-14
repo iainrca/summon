@@ -31,7 +31,7 @@ let rootScope = angular.element('html').scope().$root
           $('div.availabilityInfo').each(function () {
           //console.log($(this).text() ); 
 		  
-	  var bibid = $(this).closest($('div.documentSummary')).attr('id').replace(/FETCH-rca_catalog_u/g,'').replace(.$, '');	  	  	  	  
+	  var bibid = $(this).closest($('div.documentSummary')).attr('id').replace(/FETCH-rca_catalog_u/g,'').replace(.$,'');	  	  	  	  
           var invalidSMLocs=["SPECCOLL","CRL","AB","ARC"];
           // if you don't want a link for these which will go to the enq desk, add them to invalidSMLocs array above. Otherwise ensure all below are set up in SM db
           //["THESES","STACK","FLTV","OFFSITE","PER_NONC","PER_RES","CAT","IP","JR","ONORD"]
@@ -41,7 +41,7 @@ let rootScope = angular.element('html').scope().$root
                    //console.log(Loc);
 	  if(invalidSMLocs.indexOf(Loc) == -1) {
 	     // get bib id and append shelfmap url/link
-	      $( "<span><a href='https://app.shelfmap.co.uk/fp/fp?icode=44RCA&id=" + bibid + "' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src= alt='ShelMap drop pin' />Show me the book</a></span></br>").insertAfter( $(this) );
+	      $( "<span><a href='https://app.shelfmap.co.uk/fp/fp?icode=44RCA&id=" + bibid + "' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='ShelMap drop pin' />Show me the book</a></span></br>").insertAfter( $(this) );
    	  }		  
           if (Loc == 'CRL') {
               //console.log("Special Collections Appointment needed");
