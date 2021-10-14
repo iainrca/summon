@@ -26,18 +26,18 @@ let rootScope = angular.element('html').scope().$root
 
  function AppendToHoldings() {
 
-	  console.log("bibid");	  
+	  //console.log("bibid");	  
 	  //console.log($('div.documentSummary'));
  	  //console.log($('div.documentSummary').attr('id'));
-	  $('div.documentSummary').each(function () {
-            var bibid = $(this).attr('id').replace(/FETCH-rca_catalog_u/g,'');		  
+	  //$('div.documentSummary').each(function () {
+          //  var bibid = $(this).attr('id').replace(/FETCH-rca_catalog_u/g,'');		  
 	    //console.log(bibid);
-          });		  
+          //});		  
 	 
           $('div.availabilityInfo').each(function () {
           //console.log($(this).text() ); 
-          console.log("Trigger");	  
-	  console.log($(this).closest($('div.documentSummary')).attr('id'));	  
+          //console.log("Trigger");	  
+	  var bibid = $(this).closest($('div.documentSummary')).attr('id').replace(/FETCH-rca_catalog_u/g,'');	  
 	  	  	  
           var invalidSMLocs=["SPECCOLL","CRL","AB","ARC"];
           // if you don't want a link for these which will go to the enq desk, add them to invalidSMLocs array above. Otherwise ensure all below are set up in SM db
@@ -48,7 +48,7 @@ let rootScope = angular.element('html').scope().$root
                    //console.log(Loc);
 	  if(invalidSMLocs.indexOf(Loc) == -1) {
 	     // get bib id and append shelfmap url/link
-	      $( "<span><a href='https://app.shelfmap.co.uk?icode=44RCA&id=" + "bibid" + " target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='Map drop pin' /></a></span></br>").insertAfter( $(this) );
+	      $( "<span><a href='https://app.shelfmap.co.uk?icode=44RCA&id=" + bibid + " target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='xxx' alt='ShelMap drop pin' /></a></span></br>").insertAfter( $(this) );
    	  }		  
           if (Loc == 'CRL') {
               //console.log("Special Collections Appointment needed");
