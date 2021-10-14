@@ -27,17 +27,17 @@ let rootScope = angular.element('html').scope().$root
  function AppendToHoldings() {
 
 	  console.log("bibid");	  
-	  console.log($('div.documentSummary'));
+	  //console.log($('div.documentSummary'));
  	  //console.log($('div.documentSummary').attr('id'));
 	  $('div.documentSummary').each(function () {
             var bibid = $(this).attr('id').replace(/FETCH-rca_catalog_u/g,'');		  
-	    console.log(bibid);
+	    //console.log(bibid);
           });		  
 	 
           $('div.availabilityInfo').each(function () {
           //console.log($(this).text() ); 
           console.log("Trigger");	  
-	  console.log($('div.documentSummary').attr('id'));	  
+	  console.log($(this).closest($('div.documentSummary')).attr('id'));	  
 	  	  	  
           var invalidSMLocs=["SPECCOLL","CRL","AB","ARC"];
           // if you don't want a link for these which will go to the enq desk, add them to invalidSMLocs array above. Otherwise ensure all below are set up in SM db
