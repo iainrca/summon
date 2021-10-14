@@ -36,6 +36,8 @@ let rootScope = angular.element('html').scope().$root
 	 
           $('div.availabilityInfo').each(function () {
           //console.log($(this).text() ); 
+          console.log("Trigger");	  
+	  console.log($('div.documentSummary').attr('id'));	  
 	  	  	  
           var invalidSMLocs=["SPECCOLL","CRL","AB","ARC"];
           // if you don't want a link for these which will go to the enq desk, add them to invalidSMLocs array above. Otherwise ensure all below are set up in SM db
