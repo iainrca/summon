@@ -41,7 +41,9 @@ let rootScope = angular.element('html').scope().$root
                    //console.log(Loc);
 	  if(invalidSMLocs.indexOf(Loc) == -1) {
 	     // get bib id and append shelfmap url/link
-	      $( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk/fp/fp?icode=44RCA&id=" + bibid + "' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='https://iainrca.github.io/summon/me_logo.png' alt='ShelMap drop pin' />  Show Book on Map</a></div></br>").insertAfter( $(this) );
+	      if($(this).find(div#shelfmap).length) {
+                  $( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk/fp/fp?icode=44RCA&id=" + bibid + "' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='https://iainrca.github.io/summon/me_logo.png' alt='ShelMap drop pin' />  Show Book on Map</a></div></br>").insertAfter( $(this) );
+               }
    	  }		  
           if (Loc == 'CRL') {
               //console.log("Special Collections Appointment needed");
