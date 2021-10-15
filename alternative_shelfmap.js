@@ -45,7 +45,7 @@ let rootScope = angular.element('html').scope().$root
 	     // get bib id and append shelfmap url/link
                   $( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk/fp/fp?icode=44RCA&id=" + bibid + "' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='https://iainrca.github.io/summon/v2.svg' alt='ShelMap drop pin' height = '75px' width='75px'/>Show Book on Map</a></div></br>").insertAfter( $(this) );
                }
-          if (validSCLocs.indexOf(Loc) !== -1) {
+          else if (validSCLocs.indexOf(Loc) !== -1) {
               //console.log("Special Collections Appointment needed");
               $( "<div id='specialcol'><em>Access by <a href="https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8">appointment</a></em></div></br>" ).insertAfter( $(this) );
           } 
@@ -64,7 +64,7 @@ let rootScope = angular.element('html').scope().$root
 //              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
 //
 //          }                   
-           if (validEDLocs.indexOf(Loc) !== -1){
+          else if (validEDLocs.indexOf(Loc) !== -1){
               $( "<div id='specialcol'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );
           }
 //          else if (Loc == 'PER_NONC') {
