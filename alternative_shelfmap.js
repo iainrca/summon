@@ -46,22 +46,19 @@ let rootScope = angular.element('html').scope().$root
                }
           if (Loc == 'CRL') {
               //console.log("Special Collections Appointment needed");
-              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div></br>" ).insertAfter( $(this) );
-          } 
+$( "<div id='specialcol'><em>Access by <a href="https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8">appointment</a></em></div></br>" ).insertAfter( $(this) );        
+  	  } 
          else if (Loc == 'SPECCOLL') {
-              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
-
+$( "<div id='specialcol'><em>Access by <a href="https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8">appointment</a></em></div></br>" ).insertAfter( $(this) );
           }
          else if (Loc == 'ARC') {
-              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
-
+$( "<div id='specialcol'><em>Access by <a href="https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8">appointment</a></em></div></br>" ).insertAfter( $(this) );
           }
          else if (Loc == 'AB') {
-              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
+$( "<div id='specialcol'><em>Access by <a href="https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8">appointment</a></em></div></br>" ).insertAfter( $(this) );
           }
          else if (Loc == 'OFFSITE') {
-              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
-
+$( "<div id='specialcol'><em>Access by <a href="https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8">appointment</a></em></div></br>" ).insertAfter( $(this) );
           }                   
           else if (Loc == 'FLTV') {
               $( "<div id='specialcol'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );
