@@ -64,7 +64,7 @@ let rootScope = angular.element('html').scope().$root
 //              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
 //
 //          }                   
-           if (validSCLocs.indexOf(Loc) !== -1){
+           if (validEDLocs.indexOf(Loc) !== -1){
               $( "<div id='specialcol'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );
           }
 //          else if (Loc == 'PER_NONC') {
