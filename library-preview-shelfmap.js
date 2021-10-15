@@ -29,7 +29,7 @@ let rootScope = angular.element('html').scope().$root
 
 	 
           $('div.availabilityInfo').each(function () {
-          //console.log($(this).text() ); 
+          console.log($(this).text() ); 
 		  
 	  var bibid = $(this).closest($('div.documentSummary')).attr('id').replace(/FETCH-rca_catalog_u/g,'').replace(/.$/,'');	  	  	  	  
           var invalidSMLocs=["SPECCOLL","CRL","AB","ARC","THESES","STACK","FLTV","OFFSITE","PER_NONC","PER_RES","CAT","IP","JR","ONORD","EBOOKS","On Loan","ONLOAN","HOLDS","MISSING"];
