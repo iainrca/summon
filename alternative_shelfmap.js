@@ -46,19 +46,19 @@ let rootScope = angular.element('html').scope().$root
                }
           if (Loc == 'CRL') {
               //console.log("Special Collections Appointment needed");
-$( "<div id='specialcol'><em>Access by <a href='https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );        
+$( "<div id='specialcol'><em>Item in Special Collections - access by <a href='https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );        
   	  } 
          else if (Loc == 'SPECCOLL') {
-$( "<div id='specialcol'><em>Access by <a href='https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );
+$( "<div id='specialcol'><em>Item in Special Collections - access by <a href='https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );
           }
          else if (Loc == 'ARC') {
-$( "<div id='specialcol'><em>Access by <a href='https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );
+$( "<div id='specialcol'><em>Item in Special Collections - access by <a href='https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );
           }
          else if (Loc == 'AB') {
-$( "<div id='specialcol'><em>Access by <a href='https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );
+$( "<div id='specialcol'><em>Item in Special Collections - access by <a href='https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );
           }
          else if (Loc == 'OFFSITE') {
-$( "<div id='specialcol'><em>Access by <a href='https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );
+$( "<div id='specialcol'><em>Item in Special Collections - access by <a href='https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );
           }                   
           else if (Loc == 'FLTV') {
               $( "<div id='specialcol'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );
