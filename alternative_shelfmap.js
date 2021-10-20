@@ -42,16 +42,16 @@ let rootScope = angular.element('html').scope().$root
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
                    //console.log(Loc);
 	  if(validSMLocs.indexOf(Loc) !== -1) {
-		  if($(this).find(div#shelfmap).length) {
+		  
 	     // get bib id and append shelfmap url/link
                   $( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk/fp/fp?icode=44RCA&id=" + bibid + "' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='https://iainrca.github.io/summon/v2.svg' alt='ShelMap drop pin' height = '75px' width='75px'/>View Shelf Location</a></div></br>").insertAfter( $(this) );
-		  }
+		  
 	}
 	  if(validSPLocs.indexOf(Loc) !== -1) {
-		  if($(this).find(div#specialcol).length) {
+		  
 			$( "<div id='specialcol'><em>Item in Special Collections - access by <a href='https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );        
-		  }
-	} 
+		  
+		} 
           //if (Loc == 'CRL') {
               //console.log("Special Collections Appointment needed");
 //$( "<div id='specialcol'><em>Item in Special Collections - access by <a href='https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );        
@@ -69,9 +69,9 @@ let rootScope = angular.element('html').scope().$root
 //$( "<div id='specialcol'><em>Item in Special Collections - access by <a href='https://rca.libguides.com/c.php?g=695876&p=4994815&preview=f10de9574bdcdbccc17267f2207bfdb8' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );
 //          } 
 	if(validEQLocs.indexOf(Loc) !== -1) {
-		if($(this).find(div#enqdesk).length) {
+		
 			$( "<div id='enqdesk'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );        
-		}
+		
 	} 
 //          else if (Loc == 'FLTV') {
 //              $( "<div id='specialcol'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );
