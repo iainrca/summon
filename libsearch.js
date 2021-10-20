@@ -32,43 +32,16 @@ let rootScope = angular.element('html').scope().$root
           var LocArr = $(this).text().split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
                    //console.log(Loc);
-          if(validSPLocs.indexOf(Loc) !== -1) {
+          	if(validSPLocs.indexOf(Loc) !== -1) {
               //console.log("Special Collections Appointment needed");
-              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div></br>" ).insertAfter( $(this) );
+              		$( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div></br>" ).insertAfter( $(this) );
           } 
-//         else if (Loc == 'SPECCOLL') {
-//              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
-//
-//          }
-//         else if (Loc == 'ARC') {
-//              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
-//
-//          }
-//         else if (Loc == 'AB') {
-//              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
-//          }
-//         else if (Loc == 'OFFSITE') {
-//              $( "<div id='specialcol'><em>Access by appointment: please email <a href='mailto:special-collections@rca.ac.uk' target='_blank'>special-collections@rca.ac.uk</a> to arrange</em></div>" ).insertAfter( $(this) );
-//
-//          }                   
-	  if(validEQLocs.indexOf(Loc) !== -1) {
-              $( "<div id='specialcol'><em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
+	  	if(validEQLocs.indexOf(Loc) !== -1) {
+              		$( "<div id='specialcol'><em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
+          }    
+           	 else if (Loc == 'PER_CURR') {
+              		$( "<em>Latest Issue in Journals Room</em></br>" ).insertAfter( $(this) );
           }
-//          else if (Loc == 'PER_NONC') {
-//              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
-//          }
-//          else if (Loc == 'PER_RES') {
-//              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
-//          }
-//           else if (Loc == 'THESES') {
-//              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
-//          }
-//           else if (Loc == 'STACK') {
-//              $( "<em>Ask at Library Desk</em></br>" ).insertAfter( $(this) );
-//          }     
-            else if (Loc == 'PER_CURR') {
-              $( "<em>Latest Issue in Journals Room</em></br>" ).insertAfter( $(this) );
-            }
    });
  }
 
