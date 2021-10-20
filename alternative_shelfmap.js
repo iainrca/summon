@@ -44,7 +44,7 @@ let rootScope = angular.element('html').scope().$root
 	  if(validSMLocs.indexOf(Loc) !== -1) {
 		  
 	     // get bib id and append shelfmap url/link
-                  $( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk/fp/fp?icode=44RCA&id=" + bibid + "' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='https://iainrca.github.io/summon/v2.svg' alt='ShelMap drop pin' height = '75px' width='75px'/>View Shelf Location</a></div></br>").insertAfter( $(this) );
+                  $( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk/fp/fp?icode=44RCA&id=" + bibid + "' target='_blank' class='ShelfMap_anchor' title='View Shelf Location'><img src='https://iainrca.github.io/summon/v2.svg' alt='ShelMap drop pin' height = '75px' width='75px'/>View Shelf Location</a></div></br>").insertAfter( $(this) );
 		  
 	}
 	  if(validSPLocs.indexOf(Loc) !== -1) {
