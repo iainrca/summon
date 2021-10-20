@@ -18,7 +18,7 @@
 
 $(document).ready(function() {
 let rootScope = angular.element('html').scope().$root
-  rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 2000))
+  rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 3000))
 });
 
 /*function to append text to records where the RTA Location Code requires users to do something*/
