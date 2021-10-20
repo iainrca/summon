@@ -28,7 +28,7 @@ let rootScope = angular.element('html').scope().$root
           $('div.availabilityInfo').each(function () {
           //console.log($(this).text() ); 
           var validSPLocs=["CRL","SPECCOLL","ARC","AB","OFFSITE"];
-	 var validEQLocs=["FLTV"<"PER_NONC","PER_RES","THESES","STACK","STORE","JR","CAT","IP"];
+	  var validEQLocs=["FLTV"<"PER_NONC","PER_RES","THESES","STACK","STORE","JR","CAT","IP"];
           var LocArr = $(this).text().split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
                    //console.log(Loc);
