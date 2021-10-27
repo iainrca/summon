@@ -95,6 +95,6 @@ angular.module('summonApp')
      }        
         config.data.links.custom8 = {
          href: "https://rca.libguides.com/alumniaccess",
-         label: "Book a Visit"
+         label: "External Visitors"
      }                
  }]);
