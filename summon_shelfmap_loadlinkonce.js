@@ -26,7 +26,16 @@ let rootScope = angular.element('html').scope().$root
 
  function AppendToHoldings() {
 
-
+          //check div.availabilityInfo exists before proceeding to check if elements need adding
+	 var checkExist = setInterval(function() {
+         if ($('div.availabilityInfo').length) {
+            console.log("Exists!");
+            clearInterval(checkExist);
+         }
+         else {
+            console.log("not present yet");
+         }
+         }, 100); // check every 100ms
 	 
           $('div.availabilityInfo').each(function () {
           console.log($(this).text() ); 
