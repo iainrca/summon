@@ -19,7 +19,7 @@
 $(document).ready(function() {
 let rootScope = angular.element('html').scope().$root  
   //rootScope.$on('apiSuccess', (scope) => setInterval(AppendToHoldings, 3000))
-  rootScope.$on('apiSuccess', (scope) => CheckRTAStatus)
+  rootScope.$on('apiSuccess', (scope) => setInterval(CheckRTAStatus, 3000))
 });
 
 function CheckRTAStatus() {
