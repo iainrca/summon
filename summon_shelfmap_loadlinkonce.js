@@ -19,9 +19,22 @@
 $(document).ready(function() {
 let rootScope = angular.element('html').scope().$root  
   //rootScope.$on('apiSuccess', (scope) => setInterval(AppendToHoldings, 3000))
-  rootScope.$on('apiSuccess', (scope) => AppendToHoldings)
+  rootScope.$on('apiSuccess', (scope) => CheckRTAStatus)
 });
 
+function CheckRTAStatus() {
+	/* allow AppendToHoldings only to run if div.availabilityInfo is present
+	var checkExist = setInterval(function() {
+        if ($('div.availabilityInfo').length) {
+          console.log($('div.availabilityInfo'));
+	  AppendToHoldings;
+         clearInterval(checkExist);
+        }
+        else {
+          console.log("not present yet");
+        }
+        }, 100); // check every 100ms
+}
 
 /*function to append text to records where the RTA Location Code requires users to do something*/
 
