@@ -24,6 +24,8 @@ let rootScope = angular.element('html').scope().$root
 
 function CheckRTAStatus() {
 	/* allow AppendToHoldings only to run if div.availabilityInfo is present */
+	console.log("Checking RTA status");
+	console.log($('div.availabilityInfo'));
 	var checkExist = setInterval(function() {
         if ($('div.availabilityInfo').length) {
           console.log($('div.availabilityInfo'));
