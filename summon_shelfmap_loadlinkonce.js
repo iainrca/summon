@@ -23,7 +23,7 @@ let rootScope = angular.element('html').scope().$root
 });
 
 function CheckRTAStatus() {
-	/* allow AppendToHoldings only to run if div.availabilityInfo is present
+	/* allow AppendToHoldings only to run if div.availabilityInfo is present */
 	var checkExist = setInterval(function() {
         if ($('div.availabilityInfo').length) {
           console.log($('div.availabilityInfo'));
