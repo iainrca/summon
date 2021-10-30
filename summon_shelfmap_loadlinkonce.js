@@ -18,7 +18,8 @@
 
 $(document).ready(function() {
 let rootScope = angular.element('html').scope().$root
-  rootScope.$on('apiSuccess', (scope) => setInterval(AppendToHoldings, 3000))
+  var x=1;
+  rootScope.$on('apiSuccess', console.log("Firing " + x); X=x+1; (scope) => setInterval(AppendToHoldings, 3000))
 });
 
 
