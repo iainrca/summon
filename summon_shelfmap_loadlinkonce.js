@@ -17,9 +17,9 @@
 /* code to run the following function only when the rta results are back*/
 
 $(document).ready(function() {
-let rootScope = angular.element('html').scope().$root
-  var x=1;
-  rootScope.$on('apiSuccess', (scope) => setInterval(console.log("Firing " + x); x=x+1; AppendToHoldings, 3000))
+let rootScope = angular.element('html').scope().$root  
+  //rootScope.$on('apiSuccess', (scope) => setInterval(AppendToHoldings, 3000))
+  rootScope.$on('apiSuccess', (scope) => AppendToHoldings)
 });
 
 
@@ -27,7 +27,7 @@ let rootScope = angular.element('html').scope().$root
 
  function AppendToHoldings() {
 
-	 
+          console.log("Firing");	 
           $('div.availabilityInfo').each(function () {
           console.log($(this).text() ); 
 		  
