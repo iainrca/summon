@@ -27,6 +27,7 @@ let rootScope = angular.element('html').scope().$root
  function AppendToHoldings() {
 
           console.log("Enters Append");
+	 console.log($('div.availabilityInfo').length);
 	  console.log($('div.availabilityInfo'));
 	 
           $('div.availabilityInfo').each(function () {
