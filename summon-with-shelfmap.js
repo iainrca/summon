@@ -87,12 +87,12 @@ let rootScope = angular.element('html').scope().$root
 
             else if (Loc == 'PER_CURR') {
 		// add link to point to journals room - is this necessary now with shelfmap?
-		     console.log($(this).siblings('div#specialcol'));		  				
-		  if($(this).siblings('div#specialcol').length) {
+		     console.log($(this).siblings('div#currjour'));		  				
+		  if($(this).siblings('div#currjour').length) {
 		     // skip as link already exists
 		  }
 		  else {
-				   $( "<div id='specialcol'><em>Latest Issue in Journals Room</em></br></div>" ).insertAfter( $(this) );
+				   $( "<div id='currjour'><em>Latest Issue in Journals Room</em></br></div>" ).insertAfter( $(this) );
 	    } 
 	    }
    });
