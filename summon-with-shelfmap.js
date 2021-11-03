@@ -1,4 +1,4 @@
-  // Get HTML head element 
+   // Get HTML head element 
         var head = document.getElementsByTagName('head')[0];  
   
         // Create new link Element 
@@ -26,7 +26,21 @@ let rootScope = angular.element('html').scope().$root
 
  function AppendToHoldings() {
 
-
+         console.log("Enters Append");
+	 console.log($('div.availabilityInfo').length);
+	 console.log($('div.availabilityInfo'));
+         //check div.availabilityInfo exists before proceeding to check if elements need adding
+	 var checkExist = setInterval(function() {
+         if ($('div.availabilityInfo').length) {
+            console.log("Exists!");
+            clearInterval(checkExist);
+         }
+         else {
+            console.log("not present yet");
+         }
+         }, 100); // check every 100ms
+		 
+	  console.log("cleared");	 
 	 
           $('div.availabilityInfo').each(function () {
           console.log($(this).text() ); 
@@ -39,8 +53,14 @@ let rootScope = angular.element('html').scope().$root
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
                    //console.log(Loc);
 			if(validSMLocs.indexOf(Loc) !== -1) {
-	     // get bib id and append shelfmap url/link
-                  $( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk/fp/fp?icode=44RCA&id=" + bibid + "' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='https://iainrca.github.io/summon/v2.svg' alt='ShelMap drop pin' height = '75px' width='75px'/>View Shelf Location</a></div></br>").insertAfter( $(this) );		
+	     // get bib id and append shelfmap url/link				
+		  console.log($(this).siblings('div#shelfmap'));		  				
+		  if($(this).siblings('div#shelfmap').length) {
+		     // skip as link already exists
+		  }
+		  else {
+                     $( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk/fp/fp?icode=44RCA&id=" + bibid + "' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='https://iainrca.github.io/summon/v2.svg' alt='ShelMap drop pin' height = '75px' width='75px'/>View Shelf Location</a></div></br>").insertAfter( $(this) );		
+		  }			  
                }
 			if(validSPLocs.indexOf(Loc) !== -1) {
 		// add link to special collections booking form
