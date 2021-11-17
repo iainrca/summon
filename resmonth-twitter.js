@@ -1,5 +1,5 @@
 var startDate = new Date("November 01, 2021 00:01");
-var endDate = new Date("November 17, 2020 23:59");
+var endDate = new Date("November 17, 2021 23:59");
 
 var todayDate = new Date();
 
