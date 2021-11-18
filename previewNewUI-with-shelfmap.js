@@ -42,14 +42,14 @@ let rootScope = angular.element('html').scope().$root
 		 
 	  console.log("cleared");	 
 	 
-          $('div.availabilityRta').each(function () {
-          console.log($(this).text() ); 
+          $('a.summonBtn').each(function () {
+          console.log($(this).aria-label() ); 
 		  
 		  var bibid = $(this).closest($('div.documentSummary')).attr('id').replace(/FETCH-rca_catalog_u/g,'').replace(/.$/,'');	  	  	  	  
 		  var validSMLocs=["ONSHELF","REFERENCE","QR","PAMPHLET","PER_CURR","OVERSIZE","EAP","DYSLEXIA","FUELRCA","CRLCC"];
 		  var validSPLocs=["CRL","SPECCOLL","ARC","AB","OFFSITE"];
 		  var validEQLocs=["FLTV","PER_NONC","PER_RES","THESES","STACK","STORE","JR","CATALOGING","IP","BIN","BOUT"];
-          var LocArr = $(this).text().split(',');          
+          var LocArr = $(this).aria-label().split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
                    //console.log(Loc);
 			if(validSMLocs.indexOf(Loc) !== -1) {
