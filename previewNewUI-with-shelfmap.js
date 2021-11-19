@@ -56,7 +56,7 @@ let rootScope = angular.element('html').scope().$root
                    //console.log(Loc);
 			if(validSMLocs.indexOf(Loc) !== -1) {
 	     // get bib id and append shelfmap url/link				
-		  //console.log($(this).siblings('div#shelfmap'));		  				
+		  console.log($(this).siblings('span#shelfmap'));		  				
 		  if($(this).siblings('span#shelfmap').length) {
 		     // skip as link already exists
 		  }
