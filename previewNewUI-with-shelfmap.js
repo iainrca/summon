@@ -26,27 +26,26 @@ let rootScope = angular.element('html').scope().$root
 
  function AppendToHoldings() {
 
-         console.log("Enters Append");
-	 console.log($('div.availabilityRta').length);
-	 console.log($('div.availabilityRta'));
+         //console.log("Enters Append");
+	 //console.log($('div.availabilityRta').length);
+	 //console.log($('div.availabilityRta'));
          //check div.availabilityInfo exists before proceeding to check if elements need adding
 	 var checkExist = setInterval(function() {
          if ($('div.availabilityRta').length) {
-            console.log("Exists!");
+            //console.log("Exists!");
             clearInterval(checkExist);
          }
          else {
-            console.log("not present yet");
+            //console.log("not present yet");
          }
          }, 100); // check every 100ms
 		 
-	  console.log("cleared");	 
+	  //console.log("cleared");	 
 	 
           $('div.availabilityRta').each(function () {
-          console.log($(this));		  
-          //console.log($(this).querySelector('div.ng-scope a.summonBtn').getAttribute('title')); 		  
-          console.log($(this).find('div.ng-scope a.summonBtn'));
-	  console.log($(this).find('div.ng-scope a.summonBtn').attr('title'));	  
+          //console.log($(this));		  
+          //console.log($(this).querySelector('div.ng-scope a.summonBtn').getAttribute('title')); 		            
+	  //console.log($(this).find('div.ng-scope a.summonBtn').attr('title'));	  
 		  
 		  var bibid = $(this).closest($('div.documentSummary')).attr('id').replace(/FETCH-rca_catalog_u/g,'').replace(/.$/,'');	  	  	  	  
 		  var validSMLocs=["ONSHELF","REFERENCE","QR","PAMPHLET","PER_CURR","OVERSIZE","EAP","DYSLEXIA","FUELRCA","CRLCC"];
@@ -57,12 +56,12 @@ let rootScope = angular.element('html').scope().$root
                    //console.log(Loc);
 			if(validSMLocs.indexOf(Loc) !== -1) {
 	     // get bib id and append shelfmap url/link				
-		  console.log($(this).siblings('div#shelfmap'));		  				
+		  //console.log($(this).siblings('div#shelfmap'));		  				
 		  if($(this).siblings('div#shelfmap').length) {
 		     // skip as link already exists
 		  }
 		  else {
-                     $( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk/fp/fp?icode=44RCA&id=" + bibid + "' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='https://iainrca.github.io/summon/v2.svg' alt='ShelMap drop pin' height = '75px' width='75px'/>View Shelf Location</a></div></br>").insertAfter( $(this) );		
+                     $( "<div id='shelfmap'><a href='https://app.shelfmap.co.uk/fp/fp?icode=44RCA&id=" + bibid + "' target='_blank' class='ShelfMap_anchor' title='Show item on ShelfMap'><img src='https://iainrca.github.io/summon/v2.svg' alt='ShelMap drop pin' height = '75px' width='75px'/>View Shelf Location</a></div></br>").insertAfter( $(this).find('div.ng-scope') );		
 		  }			  
                }
 			if(validSPLocs.indexOf(Loc) !== -1) {
