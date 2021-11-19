@@ -51,15 +51,14 @@ let rootScope = angular.element('html').scope().$root
 		  var validSMLocs=["ONSHELF","REFERENCE","QR","PAMPHLET","PER_CURR","OVERSIZE","EAP","DYSLEXIA","FUELRCA","CRLCC"];
 		  var validSPLocs=["CRL","SPECCOLL","ARC","AB","OFFSITE"];
 		  var validEQLocs=["FLTV","PER_NONC","PER_RES","THESES","STACK","STORE","JR","CATALOGING","IP","BIN","BOUT"];
-          var LocArr = $(this).find('div.ng-scope a.summonBtn').attr('title').split(',');          
+          var LocArr = $(this).find('div.ng-scope .summonBtn').attr('title').split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
                    //console.log(Loc);
 			if(validSMLocs.indexOf(Loc) !== -1) {
 	     // get bib id and append shelfmap url/link				
 		  //console.log($(this).find('div.ng-scope a.summonBtn').siblings('span#shelfmap'));		  				
 		  //if($(this).siblings('span#shelfmap').length) {
-		  //if($(this).find('div.ng-scope a.summonBtn').siblings('span#shelfmap').length) {			  
-                  if($(this).find('div.ng-scope').siblings('span#shelfmap').length) {			  			  
+		  if($(this).find('div.ng-scope .summonBtn').siblings('span#shelfmap').length) {			                    
 		     // skip as link already exists
 		  }
 		  else {
