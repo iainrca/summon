@@ -27,11 +27,11 @@ let rootScope = angular.element('html').scope().$root
  function AppendToHoldings() {
 
          console.log("Enters Append");
-	 console.log($('a.summonBtn').length);
-	 console.log($('a.summonBtn'));
+	 console.log($('div.availabilityRta').length);
+	 console.log($('div.availabilityRta'));
          //check div.availabilityInfo exists before proceeding to check if elements need adding
 	 var checkExist = setInterval(function() {
-         if ($('a.summonBtn').length) {
+         if ($('div.availabilityRta').length) {
             console.log("Exists!");
             clearInterval(checkExist);
          }
@@ -42,7 +42,7 @@ let rootScope = angular.element('html').scope().$root
 		 
 	  console.log("cleared");	 
 	 
-          $('a.summonBtn').each(function () {
+          $('div.availabilityRta').each(function () {
           console.log($(this).attr(title)() ); 
 		  
 		  var bibid = $(this).closest($('div.documentSummary')).attr('id').replace(/FETCH-rca_catalog_u/g,'').replace(/.$/,'');	  	  	  	  
