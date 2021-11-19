@@ -58,7 +58,8 @@ let rootScope = angular.element('html').scope().$root
 	     // get bib id and append shelfmap url/link				
 		  //console.log($(this).find('div.ng-scope a.summonBtn').siblings('span#shelfmap'));		  				
 		  //if($(this).siblings('span#shelfmap').length) {
-		  if($(this).find('div.ng-scope a.summonBtn').siblings('span#shelfmap').length) {			  
+		  //if($(this).find('div.ng-scope a.summonBtn').siblings('span#shelfmap').length) {			  
+                  if($(this).find('div.ng-scope').siblings('span#shelfmap').length) {			  			  
 		     // skip as link already exists
 		  }
 		  else {
