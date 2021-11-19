@@ -45,6 +45,7 @@ let rootScope = angular.element('html').scope().$root
           $('div.availabilityRta').each(function () {
           console.log($(this));		  
           //console.log($(this).querySelector('div.ng-scope a.summonBtn').getAttribute('title')); 		  
+          console.log($(this).find('div.ng-scope a.summonBtn'));
 	  console.log($(this).find('div.ng-scope a.summonBtn').getAttribute('title'));	  
 		  
 		  var bibid = $(this).closest($('div.documentSummary')).attr('id').replace(/FETCH-rca_catalog_u/g,'').replace(/.$/,'');	  	  	  	  
