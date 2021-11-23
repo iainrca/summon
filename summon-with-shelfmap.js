@@ -33,7 +33,7 @@ let rootScope = angular.element('html').scope().$root
 	 var checkExist = setInterval(function() {
          if ($('div.availabilityInfo').length) {
             console.log("Exists!");
-            //clearInterval(checkExist);
+            clearInterval(checkExist);
          }
          else {
             console.log("not present yet");
