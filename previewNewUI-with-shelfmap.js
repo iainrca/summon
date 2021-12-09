@@ -26,26 +26,26 @@ let rootScope = angular.element('html').scope().$root
 
  function AppendToHoldings() {
 
-         //console.log("Enters Append");
-	 //console.log($('div.availabilityRta').length);
-	 //console.log($('div.availabilityRta'));
+         console.log("Enters Append");
+	 console.log($('div.availabilityRta').length);
+	 console.log($('div.availabilityRta'));
          //check div.availabilityInfo exists before proceeding to check if elements need adding
 	 var checkExist = setInterval(function() {
          if ($('div.availabilityRta').length) {
-            //console.log("Exists!");
+            console.log("Exists!");
             clearInterval(checkExist);
          }
          else {
-            //console.log("not present yet");
+            console.log("not present yet");
          }
          }, 100); // check every 100ms
 		 
-	  //console.log("cleared");	 
+	  console.log("cleared");	 
 	 
           $('div.availabilityRta').each(function () {
-          //console.log($(this));		  
-          //console.log($(this).querySelector('div.ng-scope a.summonBtn').getAttribute('title')); 		            
-	  //console.log($(this).find('div.ng-scope a.summonBtn').attr('title'));	  
+          console.log($(this));		  
+          console.log($(this).querySelector('div.ng-scope a.summonBtn').getAttribute('title')); 		            
+	  console.log($(this).find('div.ng-scope a.summonBtn').attr('title'));	  
 		  
 		  var bibid = $(this).closest($('div.documentSummary')).attr('id').replace(/FETCH-rca_catalog_u/g,'').replace(/.$/,'');	  	  	  	  
 		  var validSMLocs=["ONSHELF","REFERENCE","QR","PAMPHLET","PER_CURR","OVERSIZE","EAP","DYSLEXIA","FUELRCA","CRLCC"];
@@ -53,10 +53,10 @@ let rootScope = angular.element('html').scope().$root
 		  var validEQLocs=["FLTV","PER_NONC","PER_RES","THESES","STACK","STORE","JR","CATALOGING","IP","BIN","BOUT"];
           var LocArr = $(this).find('div.ng-scope .summonBtn').attr('title').split(',');          
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
-                   //console.log(Loc);
+                   console.log(Loc);
 			if(validSMLocs.indexOf(Loc) !== -1) {
 	     // get bib id and append shelfmap url/link				
-		  //console.log($(this).find('div.ng-scope a.summonBtn').siblings('span#shelfmap'));		  				
+		  console.log($(this).find('div.ng-scope a.summonBtn').siblings('span#shelfmap'));		  				
 		  //if($(this).siblings('span#shelfmap').length) {
 		  if($(this).find('div.ng-scope .summonBtn').siblings('span#shelfmap').length) {			                    
 		     // skip as link already exists
