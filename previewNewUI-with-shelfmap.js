@@ -32,7 +32,7 @@ let rootScope = angular.element('html').scope().$root
          //check div.availabilityInfo exists before proceeding to check if elements need adding
 	 var checkExist = setInterval(function() {
          if ($('div.availabilityRta').length) {
-            console.log("Exists!");
+            //console.log("Exists!");
             clearInterval(checkExist);
          }
          else {
