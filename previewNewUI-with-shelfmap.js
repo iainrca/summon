@@ -60,7 +60,8 @@ let rootScope = angular.element('html').scope().$root
 		  //console.log($(this).find('div.ng-scope a.summonBtn').siblings('span#shelfmap'));		  				
 		  //if($(this).siblings('span#shelfmap').length) {
 		  //if($(this).find('div.ng-scope .summonBtn').siblings('span#shelfmap').length) {
-		  if($(this).find('div.ng-scope .availabilityLink').siblings('span#shelfmap').length) {
+		  //if($(this).find('div.ng-scope .availabilityLink').siblings('span#shelfmap').length) {
+		  if($(this).find('div.ng-scope .summonBtn').parent().parent().siblings('span#shelfmap').length) {
 		     // skip as link already exists
 		  }
 		  else {
