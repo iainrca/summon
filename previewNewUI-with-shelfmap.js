@@ -70,29 +70,29 @@ let rootScope = angular.element('html').scope().$root
                		}
 			if(validSPLocs.indexOf(Loc) !== -1) {
 			// add link to special collections booking form 
-				if($(this).find('div.ng-scope .summonBtn').parent().parent().siblings('div#specialcol').length) {
+				if($(this).find('div.ng-scope .summonBtn').parent().parent().siblings('span#specialcol').length) {
 		    		 // skip as link already exists
 				}
 				else {
-				   $( "<div id='specialcol'><em>Item in Special Collections - access by <a href='https://rca.libguides.com/c.php?g=690477&p=4946847&preview=c35121341496a0c2f17dc536ffd730d5' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );  
+				   $( "<span id='specialcol'><em>Item in Special Collections - access by <a href='https://rca.libguides.com/c.php?g=690477&p=4946847&preview=c35121341496a0c2f17dc536ffd730d5' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );  
 				} 
 			}
 			if(validEQLocs.indexOf(Loc) !== -1) {
 			// add link to ask at library desk
-				if($(this).find('div.ng-scope .summonBtn').parent().parent().siblings('div#enqdesk').length) {
+				if($(this).find('div.ng-scope .summonBtn').parent().parent().siblings('span#enqdesk').length) {
 		     		// skip as link already exists
 				}
 				else {
-				   $( "<div id='enqdesk'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );        
+				   $( "<span id='enqdesk'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );        
 			   	} 
 			}
            		 else if (Loc == 'PER_CURR') {
 			// add link to point to journals room
-				if($(this).find('div.ng-scope .summonBtn').parent().parent().siblings('div#specialcol').length) {
+				if($(this).find('div.ng-scope .summonBtn').parent().parent().siblings('span#specialcol').length) {
 		     		// skip as link already exists
 				}
 				else {
-				   $( "<div id='specialcol'><em>Latest Issue in Journals Room</em></br></div>" ).insertAfter( $(this) );
+				   $( "<span id='specialcol'><em>Latest Issue in Journals Room</em></br></div>" ).insertAfter( $(this) );
 	    			} 
 			}
    });
