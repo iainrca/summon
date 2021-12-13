@@ -74,7 +74,7 @@ let rootScope = angular.element('html').scope().$root
 		    		 // skip as link already exists
 				}
 				else {
-				   $( "<span id='specialcol'><em>Item in Special Collections - access by <a href='https://rca.libguides.com/c.php?g=690477&p=4946847&preview=c35121341496a0c2f17dc536ffd730d5' target='_blank'>appointment</a></em></div></br>" ).insertAfter( $(this) );  
+				   $( "<span id='specialcol'><em>Item in Special Collections - access by <a href='https://rca.libguides.com/c.php?g=690477&p=4946847&preview=c35121341496a0c2f17dc536ffd730d5' target='_blank'>appointment</a></em></span></br>" ).insertAfter( $(this) );  
 				} 
 			}
 			if(validEQLocs.indexOf(Loc) !== -1) {
@@ -83,7 +83,7 @@ let rootScope = angular.element('html').scope().$root
 		     		// skip as link already exists
 				}
 				else {
-				   $( "<span id='enqdesk'><em>Ask at Library Desk</em></br></div>" ).insertAfter( $(this) );        
+				   $( "<span id='enqdesk'><em>Ask at Library Desk</em></br></span>" ).insertAfter( $(this) );        
 			   	} 
 			}
            		 else if (Loc == 'PER_CURR') {
@@ -92,7 +92,7 @@ let rootScope = angular.element('html').scope().$root
 		     		// skip as link already exists
 				}
 				else {
-				   $( "<span id='specialcol'><em>Latest Issue in Journals Room</em></br></div>" ).insertAfter( $(this) );
+				   $( "<span id='specialcol'><em>Latest Issue in Journals Room</em></br></span>" ).insertAfter( $(this) );
 	    			} 
 			}
    });
