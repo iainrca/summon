@@ -44,6 +44,6 @@ body .moreFacetsContainer {
   color:red !important;
   }
 	
-.btn.languageMenuButton {
+.languageMenu {
 	display:none;
 	}
