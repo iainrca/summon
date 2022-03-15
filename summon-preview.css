@@ -45,5 +45,5 @@ body .moreFacetsContainer {
   }
 	
 .languageMenu {
-	display:none;
+	display:none!important;
 	}
