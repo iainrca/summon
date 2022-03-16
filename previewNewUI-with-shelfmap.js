@@ -14,7 +14,10 @@
         // Append link element to HTML head 
         document.head.appendChild(link);
 
+$('body').append('<style>.languageMenuButton { display: none !important; }</style>')
+
 /* code to run the following function only when the rta results are back*/
+
 
 $(document).ready(function() {
 let rootScope = angular.element('html').scope().$root
