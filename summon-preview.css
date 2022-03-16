@@ -44,6 +44,8 @@ body .moreFacetsContainer {
   color:red !important;
   }
 	
-.width-fit-content.headerButton.col {
-	display:none!important;
-	}
+.languageMenuButton {
+
+    display: none !important;
+
+}
