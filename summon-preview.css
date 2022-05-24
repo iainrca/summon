@@ -43,3 +43,8 @@ body .moreFacetsContainer {
 ."::i18n.translations.CLEAR_FILTERS" {
   color:red !important;
   }
+
+/*remove the top links, even when on the RCA network*/
+ .topLinks {
+	 display:none;
+	}
