@@ -46,5 +46,5 @@ body .moreFacetsContainer {
 
 /*remove the top links, even when on the RCA network*/
  .vpnBanner .customAuthBanner {
-	 display:none;
+	 display:none!important;
 	}
