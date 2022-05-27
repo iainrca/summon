@@ -15,7 +15,6 @@
         document.head.appendChild(link);
 
  $('body').append('<style>.languageMenuButton { display: none !important; }</style>')
-  $('body').append('<style>.customLinks { visibility: hidden !important; }</style>')
 
 
 /* code to run the following function only when the rta results are back*/
