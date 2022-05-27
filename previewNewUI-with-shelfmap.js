@@ -17,6 +17,13 @@
  $('body').append('<style>.languageMenuButton { display: none !important; }</style>')
  // $('body').append('<style>.customLinks { display: none !important; }</style>')
 
+// attempt to hide the topLinks row 
+
+function removeToplinks(){
+        var element = document.getElementById("topLinks");
+        element.style.visibility = "hidden";
+    }
+
 /* code to run the following function only when the rta results are back*/
 
 
