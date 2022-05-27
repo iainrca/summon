@@ -43,9 +43,3 @@ body .moreFacetsContainer {
 ."::i18n.translations.CLEAR_FILTERS" {
   color:red !important;
   }
-	
-/*hide feedback link?*/
-	
-.list-unstyled > li:first-child{
-   visibility: hidden;
-	}
