@@ -46,6 +46,6 @@ body .moreFacetsContainer {
 	
 /*hide feedback link?*/
 	
-#list-unstyled > li:first-child{
+.list-unstyled > li:first-child{
    visibility: hidden;
 	}
