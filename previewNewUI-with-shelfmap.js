@@ -15,7 +15,7 @@
         document.head.appendChild(link);
 
  $('body').append('<style>.languageMenuButton { display: none !important; }</style>')
- $('body').append('<style>.list-inline { display: none !important; }</style>')
+ //*$('body').append('<style>.list-inline { display: none !important; }</style>')
 
 
 
