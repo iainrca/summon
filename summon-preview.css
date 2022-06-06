@@ -43,8 +43,4 @@ body .moreFacetsContainer {
 ."::i18n.translations.CLEAR_FILTERS" {
   color:red !important;
   }
-/* hide first element in burger menu */
 	
-.list-unstyled > li:first-child{
-   visibility: hidden;
-}
