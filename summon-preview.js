@@ -15,7 +15,14 @@
         document.head.appendChild(link);
 
  $('body').append('<style>.languageMenuButton { display: none !important; }</style>')
+
+// remove top links from displaying when user is on campus
+
  $('body').append('<style>.list-inline { display: none !important; }</style>')
+
+// remove Feedback from list of options
+
+$('body').append('<style>.list-unstyled ul > li:first-child{ display: none;}</style>')
 
 
 
