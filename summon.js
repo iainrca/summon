@@ -22,7 +22,7 @@
 
 // remove Feedback from list of options
 
-$('body').append('<style>.list-unstyled ul > li:first-child{ display: none;}</style>')
+//$('body').append('<style>.list-unstyled ul > li:first-child{ display: none;}</style>')
 
 
 
