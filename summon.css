@@ -43,6 +43,11 @@ body .moreFacetsContainer {
 ."::i18n.translations.CLEAR_FILTERS" {
   color:red !important;
   }
+/*hide new Quick Look button*/	
+.quick-look-button {
+	display:none;
+	}
+	
 /* hide first element in burger menu */
 	
 /* #list-unstyled > li:first-child{
