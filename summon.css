@@ -44,12 +44,9 @@ body .moreFacetsContainer {
   color:red !important;
   }
 /*hide new Quick Look button*/	
-.quick-look-button {
-	display:none!important;
-	}
 
-.quick-look-button{
-	visibility:hidden!important;
+.quick-look-button.hidden-xs {
+	display:none!important;
 	}
 	
 /* hide first element in burger menu */
