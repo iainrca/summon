@@ -47,6 +47,10 @@ body .moreFacetsContainer {
 .quick-look-button {
 	display:none!important;
 	}
+
+.quick-look-button{
+	visibility:hidden!important;
+	}
 	
 /* hide first element in burger menu */
 	
