@@ -33,9 +33,9 @@ body {
 }
 
 /*hide QUick Look button*/
-.quick-look-button {
+/*.quick-look-button {
 	display:none;
-}
+}*/
 
 /*someone appears to be messing with our css a bit, so am changing the facets background to white */
 body .moreFacetsContainer {
