@@ -57,8 +57,10 @@ body .moreFacetsContainer {
 	
 
 /* Change Facet and Third Panel button background colour*/
-	
-	.thirdPanelMenuToggle.btn .facetMenuToggle.btn{
-	background-color:#000!important;
-	border-color:#000!important;
+ .uxf-right-open:before{
+	 color:#000;
 }
+
+.uxf-left-open:before {
+	color:#000;
+	}
