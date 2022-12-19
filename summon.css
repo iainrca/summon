@@ -54,3 +54,11 @@ body .moreFacetsContainer {
 /* #list-unstyled > li:first-child{
    visibility: hidden;
 }*/
+	
+
+/* Change Facet and Third Panel button background colour
+	
+	.thirdPanelMenuToggle.btn .facetMenuToggle.btn{
+	background-color:#000!important;
+	border-color:#000!important;
+}
