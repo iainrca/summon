@@ -58,9 +58,9 @@ body .moreFacetsContainer {
 
 /* Change Facet and Third Panel button background colour*/
  .uxf-right-open:before{
-	 color:#000;
+	 color:#000!important;
 }
 
 .uxf-left-open:before {
-	color:#000;
+	color:#000!important;
 	}
