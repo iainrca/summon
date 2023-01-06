@@ -64,3 +64,10 @@ body .moreFacetsContainer {
 .uxf-left-open {
 	color:#000!important;
 	}
+.facetMenuToggle.btn {
+	border:none;
+	}
+	
+.thirdPanelMenuToggle.btn {
+	border:none;
+	}
