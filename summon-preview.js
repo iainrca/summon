@@ -154,4 +154,8 @@ angular.module('summonApp')
          href: "https://rca.libguides.com/alumniaccess",
          label: "External Visitors"
      }                
+	        config.data.links.custom9 = {
+         href: "https://rca.libguides.com",
+         label: "Preview Env"
+     }                
  }]);
