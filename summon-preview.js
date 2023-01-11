@@ -64,6 +64,7 @@ let rootScope = angular.element('html').scope().$root
 		  //var bibid = $(this).closest($('div.documentSummary')).attr('id').replace(/FETCH-rca_catalog_u/g,'').replace(/.$/,'');	  	  	  	  
 		  console.log($(this));
 		  console.log($(this).closest($('span')));
+		  console.log($(this).find('span').first());
 		  var bibid = $(this).closest($('span')).data('bibid').replace(/u/g,'').replace(/.$/,'');
 		  var validSMLocs=["ONSHELF","REFERENCE","QR","PAMPHLET","PER_CURR","OVERSIZE","EAP","DYSLEXIA","FUELRCA","CRLCC"];
 		  var validSPLocs=["CRL","SPECCOLL","ARC","AB","OFFSITE"];
