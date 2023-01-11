@@ -65,7 +65,7 @@ let rootScope = angular.element('html').scope().$root
 		  console.log($(this));
 		  console.log($(this).closest($('span')));
 		  console.log($(this).find('span').first());
-		  var bibid = $(this).closest($('span')).data('bibid').replace(/u/g,'').replace(/.$/,'');
+		  var bibid = $(this).find('span').first().data('bibid').replace(/u/g,'').replace(/.$/,'');
 		  var validSMLocs=["ONSHELF","REFERENCE","QR","PAMPHLET","PER_CURR","OVERSIZE","EAP","DYSLEXIA","FUELRCA","CRLCC"];
 		  var validSPLocs=["CRL","SPECCOLL","ARC","AB","OFFSITE"];
 		  var validEQLocs=["PER_NONC","PER_RES","THESES","STACK","STORE","JR","CATALOGING","IP","BIN","BOUT"];
