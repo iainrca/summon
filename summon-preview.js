@@ -9,12 +9,12 @@
       
         link.type = 'text/css'; 
       
-        link.href = 'https://iainrca.github.io/summon/summon-preview.css';  
+        link.href = 'https://iainrca.github.io/summon/summon.css';  
   
         // Append link element to HTML head 
         document.head.appendChild(link);
 
- $('body').append('<style>.languageMenuButton { display: none !important; }</style>')
+  $('body').append('<style>.languageMenuButton { display: none !important; }</style>')
 
 // remove top links from displaying when user is on campus
 
@@ -22,9 +22,11 @@
 
 // remove Feedback from list of options
 
-$('body').append('<style>.list-unstyled ul > li:first-child{ display: none;}</style>')
+//$('body').append('<style>.list-unstyled ul > li:first-child{ display: none;}</style>')
 
+//remove quick look button
 
+$('body').append('<style>.quick-look-button{ display: none !important; }</style>')
 
 
 /* code to run the following function only when the rta results are back*/
@@ -61,8 +63,7 @@ let rootScope = angular.element('html').scope().$root
           //console.log($(this).querySelector('div.ng-scope a.summonBtn').getAttribute('title')); 		            
 	  //console.log($(this).find('div.ng-scope a.summonBtn').attr('title'));	  
 		  
-		  //var bibid = $(this).closest($('div.documentSummary')).attr('id').replace(/FETCH-rca_catalog_u/g,'').replace(/.$/,'');	  	  	  	  
-		  var bibid = $(this).find('span').first().data('bibid').replace(/u/g,'');
+		  var bibid = $(this).closest($('div.documentSummary')).attr('id').replace(/FETCH-rca_catalog_u/g,'').replace(/.$/,'');	  	  	  	  
 		  var validSMLocs=["ONSHELF","REFERENCE","QR","PAMPHLET","PER_CURR","OVERSIZE","EAP","DYSLEXIA","FUELRCA","CRLCC"];
 		  var validSPLocs=["CRL","SPECCOLL","ARC","AB","OFFSITE"];
 		  var validEQLocs=["PER_NONC","PER_RES","THESES","STACK","STORE","JR","CATALOGING","IP","BIN","BOUT"];
@@ -148,15 +149,11 @@ angular.module('summonApp')
          label: "Inter-library Loans"
      }
        config.data.links.custom7 = {
-         href: "https://library.rca.ac.uk/client/en_GB/summon/search/patronlogin/http:$002f$002flibrary.rca.ac.uk$002fclient$002fen_GB$002fsummon$002fsearch$002faccount$002f1$003f",
+         href: "https://library.rca.ac.uk/client/en_GB/2015/search/patronlogin/http:$002f$002flibrary.rca.ac.uk$002fclient$002fen_GB$002fsummon$002fsearch$002faccount$002f1$003f",
          label: "My Account"
      }        
         config.data.links.custom8 = {
          href: "https://rca.libguides.com/alumniaccess",
          label: "External Visitors"
-     }                
-	        config.data.links.custom9 = {
-         href: "https://rca.libguides.com",
-         label: "Preview Env"
      }                
  }]);
