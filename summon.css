@@ -73,6 +73,6 @@ body .moreFacetsContainer {
 	}
 /* hide Librarian Lists feature by Syndetics */
 	
-.documentSummary.unbound_searchresult {
-	display:none!important
+unbound_searchresult.summon2.unbound_searchresult_stat_recorded {
+	display:none!important;
 	}
