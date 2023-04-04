@@ -71,8 +71,3 @@ body .moreFacetsContainer {
 .thirdPanelMenuToggle.btn {
 	border:none;
 	}
-/* hide Librarian Lists feature by Syndetics */
-	
-unbound_searchresult.summon2.unbound_searchresult_stat_recorded {
-	display:none!important;
-	}
