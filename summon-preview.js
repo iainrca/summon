@@ -115,6 +115,15 @@ let rootScope = angular.element('html').scope().$root
 				   $( $(this).find('div.ng-scope') ).append( "<div id='specialcol'><em>Latest Issue in Journals Room</em></br></div>" );
 	    } 
 			}
+            else if (Loc == ’STORECW’) {
+		// add link to point to journals room - is this necessary now with shelfmap?
+						if($(this).find('div.ng-scope .summonBtn').parent().parent().siblings('div#specialcol').length) {
+		     // skip as link already exists
+				}
+				else {
+				   $( $(this).find('div.ng-scope') ).append( "<div id='specialcol'><em>Content warning: this item contains harmful and discriminatory language/imagery<br>In storage: place reservation/ask at Library Desk</em></br></div>" );
+	    } 
+			}	   	  
    });
  }
 
