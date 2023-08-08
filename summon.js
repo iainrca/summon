@@ -68,8 +68,8 @@ let rootScope = angular.element('html').scope().$root
 		  var validSPLocs=["CRL","SPECCOLL","ARC","AB","OFFSITE"];
 		  var validEQLocs=["PER_NONC","PER_RES","THESES","STACK","STORE","JR","CATALOGING","IP","BIN","BOUT","QR","PAMPHLET"];
           //var LocArr = $(this).find('div.ng-scope .summonBtn').attr('title').split(','); 
-          console.log($(this).find('div.ng-scope .summonBtn'));		  
-	  var LocArr = $(this).find('div.ng-scope .availabilityLink').attr('title').split(',');
+          //console.log($(this).find('div.ng-scope .summonBtn'));		  
+	  var LocArr = $(this).find('div.ng-scope .summonBtn').attr('title').split(',');
           var Loc = LocArr[0].replace(/[\s\n]+/g,'');
                    console.log(Loc);
 			if(validSMLocs.indexOf(Loc) !== -1) {
