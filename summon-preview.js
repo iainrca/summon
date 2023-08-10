@@ -115,7 +115,7 @@ let rootScope = angular.element('html').scope().$root
 				   $( $(this).find('div.ng-scope') ).append( "<div id='specialcol'><em>Latest Issue in Journals Room</em></br></div>" );
 	    } 
 			}
-            else if (Loc == ’STORECW’) {
+            else if (Loc == 'STORECW') {
 		// add link to point to journals room - is this necessary now with shelfmap?
 						if($(this).find('div.ng-scope .summonBtn').parent().parent().siblings('div#specialcol').length) {
 		     // skip as link already exists
