@@ -142,11 +142,11 @@ angular.module('summonApp')
          label: "Library Moodle"
      }
      config.data.links.custom5 = {
-         href: "https://rca.libguides.com/c.php?g=688796&p=4929377&preview=95943e5b520b75b578fafbc6ff01919f",
+         href: "https://rca.libguides.com/suggestions",
          label: "Suggest a Book"
      }
       config.data.links.custom6 = {
-         href: "https://rca.libguides.com/c.php?g=688796&p=4929379&preview=95943e5b520b75b578fafbc6ff01919f",
+         href: "https://rca.libguides.com/suggestions/ill",
          label: "Inter-library Loans"
      }
        config.data.links.custom7 = {
