@@ -116,7 +116,7 @@ let rootScope = angular.element('html').scope().$root
 	    } 
 			}
             else if (Loc == 'STORECW') {
-		// add link to point to journals room - is this necessary now with shelfmap?
+		// add link for store content warning
 						if($(this).find('div.ng-scope .summonBtn').parent().parent().siblings('div#specialcol').length) {
 		     // skip as link already exists
 				}
