@@ -66,7 +66,7 @@ let rootScope = angular.element('html').scope().$root
 		  var bibid = $(this).closest($('div.documentSummary')).attr('id').replace(/FETCH-rca_catalog_u/g,'').replace(/.$/,'');	  	  	  	  
 		  var validSMLocs=["ONSHELF","REFERENCE","PER_CURR","OVERSIZE","EAP","DYSLEXIA","FUELRCA","CRLCC"];
 		  var validSPLocs=["CRL","SPECCOLL","ARC","AB","OFFSITE"];
-		  var validEQLocs=["PER_NONC","PER_RES","THESES","STACK","STORE","JR","CATALOGING","IP","BIN","BOUT","QR","PAMPHLET"];
+		  var validEQLocs=["PER_NONC","PER_RES","THESES","STACK","STORE","JR","CATALOGING","IP","BIN","BOUT","QR","PAMPHLET","FLTV"];
           //var LocArr = $(this).find('div.ng-scope .summonBtn').attr('title').split(','); 
           //console.log($(this).find('div.ng-scope .summonBtn'));		  
 	  var LocArr = $(this).find('div.ng-scope .summonBtn').attr('title').split(',');
