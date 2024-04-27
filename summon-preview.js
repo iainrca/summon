@@ -39,7 +39,7 @@ $(document).ready(function() {
     });
 
    //domObserver.observe(document.body, { childList: true, subtree: true });
-   domObserver.observe(document.querySelectorAll("div.documentSummary > div.summary > div.row"), { childList: true, subtree: true });
+   domObserver.observe(document.querySelectorAll("div.documentSummary > div.summary"), { childList: true, subtree: true });
 
 //let rootScope = angular.element('html').scope().$root
 //  rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 3000))
