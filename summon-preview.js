@@ -39,7 +39,7 @@ $(document).ready(function() {
     });
 
    //domObserver.observe(document.body, { childList: true, subtree: true });
-   console.log(document.querySelectorAll("div.documentSummary > div.summary");	
+   console.log(document.querySelectorAll("div.documentSummary > div.summary"));	
    domObserver.observe(document.querySelectorAll("div.documentSummary"), { childList: true, subtree: true });
 
 //let rootScope = angular.element('html').scope().$root
