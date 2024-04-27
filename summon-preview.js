@@ -33,15 +33,17 @@
 
 
 $(document).ready(function() {
-if (ngAfterViewInit()) {
-    console.log("all components loader");
-    AppendToHoldings();
-} 
-let viewInit = ngAfterViewInit()
-viewInit.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 3000))	
+    const domObserver = new MutationObserver((mutationList) => {
+	// document.body has changed! Do something.
+    console.log("Calling Append fn")
+    });
+
+   domObserver.observe(document.querySelectorAll("div#availability"), { childList: true, subtree: true });
+
 //let rootScope = angular.element('html').scope().$root
 //  rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 3000))
 });
+
 
 
 /*function to append text to records where the RTA Location Code requires users to do something*/
