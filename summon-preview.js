@@ -33,8 +33,13 @@
 
 
 $(document).ready(function() {
-let rootScope = angular.element('html').scope().$root
-  rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 3000))
+class ShelfMapComponent implements AfterViewInit {
+    ngAfterViewInit() {
+	    AppendToHoldings();        
+    }
+} 
+//let rootScope = angular.element('html').scope().$root
+//  rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 3000))
 });
 
 
