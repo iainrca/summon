@@ -34,11 +34,10 @@
 
 $(document).ready(function() {
     const domObserver = new MutationObserver((mutationList) => {
-	// document.body has changed! Do something.
-    console.log("Calling Append fn")
+    // document.body has changed! Do something.    
     var selection = document.querySelector("div.documentSummary") !== null;
     if(selection) {
-     console.log("Append fn");
+     AppendToHoldings()
     }
 	    
     });
