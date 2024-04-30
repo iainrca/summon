@@ -33,8 +33,20 @@ $('body').append('<style>.quick-look-button{ display: none !important; }</style>
 
 
 $(document).ready(function() {
-let rootScope = angular.element('html').scope().$root
-  rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 3000))
+    const domObserver = new MutationObserver((mutationList) => {
+    // document.body has changed! Do something.    
+    var selection = document.querySelector("div.documentSummary") !== null;
+    if(selection) {
+     AppendToHoldings()
+    }
+	    
+    });
+
+   domObserver.observe(document.body, { childList: true, subtree: true });
+   	
+
+//let rootScope = angular.element('html').scope().$root
+//  rootScope.$on('apiSuccess', (scope) => setTimeout(AppendToHoldings, 3000))
 });
 
 
